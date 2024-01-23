@@ -726,15 +726,15 @@ Positioned.directional({
 ```
 
 ### Positioned.directional(...)参数解析
-| 参数名称          | 使用类型           | 参数介绍                      |
-|---------------|----------------|---------------------------|
-| key           | Key            | 用于在树中唯一标识该组件              |
-| textDirection | TextDirection  | 指定子部件相对于父容器的文本方向，是一个必需参数  |
-| start         | doub           | 子部件相对于起始边缘的偏移量            |
-| top           | doub           | 子部件相对于顶部边缘的偏移量            |
-| end           | doub           | 子部件相对于结束边缘的偏移量            |
-| bottom        | doub           | 子部件相对于底部边缘的偏移量            |
-| width         | doub           | 子部件的宽度                    |
-| height        | doub           | 子部件的高度                    |
-| child         | Widget         | 要定位的子部件，是一个必需参数           |
+| 参数名称          | 使用类型          | 参数介绍                     |
+|---------------|---------------|--------------------------|
+| key           | Key           | 用于在树中唯一标识该组件             |
+| textDirection | TextDirection | 指定子部件相对于父容器的文本方向，是一个必需参数 |
+| start         | double        | 子部件相对于起始边缘的偏移量           |
+| top           | double        | 子部件相对于顶部边缘的偏移量           |
+| end           | double        | 子部件相对于结束边缘的偏移量           |
+| bottom        | double        | 子部件相对于底部边缘的偏移量           |
+| width         | double        | 子部件的宽度                   |
+| height        | double        | 子部件的高度                   |
+| child         | Widget        | 要定位的子部件，是一个必需参数          |
 
