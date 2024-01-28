@@ -9,7 +9,7 @@
 * 《从零开始学Flutter开发》（基于Flutter1.17） 作者 ： 谭东，出版社 ： 电子工业出版社
 * 《Flutter实战》（基于Flutter3.0） 作者 ： 杜文， 出版社 ： 机械工业出版社
 * Flutter中国站开发者文档， https://flutter.cn/docs
-* chatGPT3.5的讲解，但是基于Flutter1.x版本（具体不知）
+* chatGPT3.5的讲解，但是基于Flutter1.x版本（截至2023年中旬具体不知）
 
 ## 声明
 
