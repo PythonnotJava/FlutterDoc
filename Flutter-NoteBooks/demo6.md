@@ -645,5 +645,3 @@ LinearProgressIndicator({
 | minHeight       | double  | 进度条的最小高度                                                                             |
 | semanticsLabel  | String  | 用于无障碍访问的标签，用于描述进度条的用途                                                                |
 | semanticsValue  | String  | 用于无障碍访问的值，用于描述进度的百分比                                                                 |
-
-## 

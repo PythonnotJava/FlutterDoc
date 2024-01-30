@@ -1,5 +1,5 @@
 # 动画
-> Flutter3.0提供了以下的动画类]
+> Flutter3.0提供了以下的动画类
 > * AnimationController：用于管理动画的执行。它控制动画的时间、速度、方向等。
 > * CurvedAnimation： Flutter 动画库中的一个类，它用于将一个线性的动画转换为一个非线性的动画，以实现一些弹性、缓冲或自定义的动画效果。
 > * Tween：用于在动画的起始值和结束值之间插值。它通常与 AnimationController 和 CurvedAnimation 一起使用，帮助你在动画的生命周期内生成一个值的范围。
