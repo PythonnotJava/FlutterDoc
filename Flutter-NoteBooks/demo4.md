@@ -1,5 +1,4 @@
 # Input控件
-> Flutter3.0提供了以下的输入控件
 > * TexField：用于接收用户的文本输入。它提供了一个文本输入框，用户可以在其中输入和编辑文本。
 > * TextFormField：一个表单字段控件，用于接收用户输入的文本。
 > * InputDecoration：用于装饰文本输入字段（TextInputField）的类。

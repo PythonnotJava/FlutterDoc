@@ -1,5 +1,4 @@
 # 容器
-> Flutter3.0提供了以下的容器
 > * Form：Flutter中用于创建和管理表单的控件
 > * FlexibleSpaceBar：用于在可折叠应用栏的可伸缩空间中创建自定义内容。
 > * SliverGrid：用于在可滚动区域中显示网格布局的内容。它是CustomScrollView的一部分，用于创建可滚动的网格视图。

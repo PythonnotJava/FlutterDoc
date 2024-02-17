@@ -1,5 +1,4 @@
 # 对话框类
-> Flutter3.0提供了以下的对话框类
 > * showDialog：用于显示各种不同类型对话框的载体。
 > * showCupertinoDialog：用于显示Cupertino风格对话框的方法。
 > * showGeneralDialog：用于显示通用对话框的方法。与showDialog和showCupertinoDialog相比，showGeneralDialog提供了更高度的自定义能力，可以用于构建更灵活和复杂的对话框。

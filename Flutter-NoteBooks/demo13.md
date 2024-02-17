@@ -1,5 +1,4 @@
 # 路由
-> Flutter3.0提供了以下的构建路由功能的类
 > * PageRouteBuilder：用于构建自定义页面过渡动画的一个类。它允许你自定义页面切换时的动画、过渡效果、持续时间等属性。
 > * MaterialPageRoute：是PageRoute 的一个实现，它提供了一个具有标准的Material Design外观的页面切换效果。
 

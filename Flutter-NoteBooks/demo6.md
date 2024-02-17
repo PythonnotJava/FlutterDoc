@@ -1,5 +1,4 @@
 # 导航类
-> Flutter3.0提供了以下的导航类
 > * AppBar：常用的顶部应用栏小部件，它通常作为Scaffold的一个组件，提供了标题、操作按钮、导航按钮等功能。
 > * BottomAppBar：用于在应用程序底部创建一个导航栏。
 > * TabBar：用于创建选项卡式的导航栏。它通常与TabBarView和DefaultTabController一起使用，以实现切换不同页面内容的功能。
@@ -12,6 +11,12 @@
 > * BottomNavigationBarItem：用于在底部导航栏中显示单个项目。它通常与BottomNavigationBar一起使用，用于创建底部导航栏的每个项目。
 > * PageController：PageController是一个用于控制页面切换的类。它通常与PageView一起使用，用于实现滑动切换多个页面的效果。 
 > * LinearProgressIndicator：用于显示线性进度条的小部件
+> * Drawer：用于创建抽屉式导航菜单的组件。抽屉菜单通常是在屏幕的一侧（通常是左侧）滑动出现的，用于提供应用程序的导航选项、设置、帮助等功能。Drawer 通常与 Scaffold 配合使用。
+> * DrawerHeader：Flutter 中用于在抽屉菜单中显示标题、标识符或其他相关信息的控件。通常，DrawerHeader 位于抽屉菜单的顶部，可以包含应用程序的标题、标志、用户信息等。
+
+
+
+
 ## AppBar类
 ### 默认构造函数
 ```text
@@ -645,3 +650,70 @@ LinearProgressIndicator({
 | minHeight       | double  | 进度条的最小高度                                                                             |
 | semanticsLabel  | String  | 用于无障碍访问的标签，用于描述进度条的用途                                                                |
 | semanticsValue  | String  | 用于无障碍访问的值，用于描述进度的百分比                                                                 |
+
+## Drawer类
+### 默认构造函数
+```text
+Drawer({
+    super.key,
+    this.backgroundColor,
+    this.elevation,
+    this.shadowColor,
+    this.surfaceTintColor,
+    this.shape,
+    this.width,
+    this.child,
+    this.semanticLabel,
+    this.clipBehavior,
+  })
+```
+
+### PageController(...)参数解析
+| 参数名称             | 使用类型        | 参数介绍                    |
+|------------------|-------------|-------------------------|
+| key              | Key         | Drawer 的标识键             |
+| backgroundColor  | Color       | 用于指定抽屉的背景颜色             |
+| elevation        | double      | 用于指定抽屉的海拔高度，即抽屉的阴影效果    |
+| shadowColor      | Color       | 用于指定抽屉的阴影颜色             |
+| surfaceTintColor | Color       | 用于指定抽屉的表面颜色             |
+| shape            | ShapeBorder | 用于指定抽屉的形状               |
+| width            | double      | 用于指定抽屉的宽度               |
+| child            | Widget      | 用于指定抽屉中显示的内容            |
+| semanticLabel    | String      | 用于指定抽屉的语义标签，用于辅助技术的可访问性 |
+| clipBehavior     | Clip        | 用于指定抽屉的裁剪行为             |
+
+## DrawerHeader类
+```text
+DrawerHeader({
+    super.key,
+    this.decoration,
+    this.margin = const EdgeInsets.only(bottom: 8.0),
+    this.padding = const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
+    this.duration = const Duration(milliseconds: 250),
+    this.curve = Curves.fastOutSlowIn,
+    required this.child,
+  })
+```
+
+### DrawerHeader类(...)参数解析
+| 参数名称       | 使用类型       | 参数介绍                       |
+|------------|------------|----------------------------|
+| key        | Key        | 用于指定当前 DrawerHeader 的标识键   |
+| decoration | Decoration | 用于指定抽屉头部的装饰                |
+| margin     | EdgeInsets | 用于指定抽屉头部与其他控件之间的外边距        |
+| padding    | EdgeInsets | 用于指定抽屉头部内部的填充              |
+| duration   | Duration   | 用于指定抽屉头部动画的持续时间            |
+| curve      | Curve      | 用于指定抽屉头部动画的曲线              |
+| child      | Widget     | 用于指定抽屉头部中显示的内容             |
+
+
+
+
+
+
+
+
+
+
+
+
