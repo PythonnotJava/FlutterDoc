@@ -239,13 +239,13 @@ CupertinoThemeData({
 ```
 
 ### CupertinoThemeData(...)参数解析
-| 参数名称                     | 使用类型                   | 参数介绍                                                        |
-|--------------------------|------------------------|-------------------------------------------------------------|
-| brightness               | Brightness             | 指定主题的亮度模式，可以是 Brightness.light（浅色模式）或 Brightness.dark（深色模式） |
-| primaryColor             | Color                  | 定义应用程序的主要颜色                                                 |
-| primaryContrastingColor  | Color                  | 定义与 primaryColor 对比的颜色，用于一些需要强调的元素                          |
-| textThme                 | CupertinoTextThemeData | 定义文字样式，包括标题、正文等                                             |
-| barBackgroundColor       | Color                  | 定义导航栏、底部栏等条形元素的背景颜色                                         |
-| scaffoldBackgroundColor  | Color                  | 定义整个页面（Scaffold）的背景颜色                                       |
-| applyThemeToAll          | bool                   | 指定是否将主题应用于整个应用程序                                            |
+| 参数名称                    | 使用类型                   | 参数介绍                                                        |
+|-------------------------|------------------------|-------------------------------------------------------------|
+| brightness              | Brightness             | 指定主题的亮度模式，可以是 Brightness.light（浅色模式）或 Brightness.dark（深色模式） |
+| primaryColor            | Color                  | 定义应用程序的主要颜色                                                 |
+| primaryContrastingColor | Color                  | 定义与 primaryColor 对比的颜色，用于一些需要强调的元素                          |
+| textTheme               | CupertinoTextThemeData | 定义文字样式，包括标题、正文等                                             |
+| barBackgroundColor      | Color                  | 定义导航栏、底部栏等条形元素的背景颜色                                         |
+| scaffoldBackgroundColor | Color                  | 定义整个页面（Scaffold）的背景颜色                                       |
+| applyThemeToAll         | bool                   | 指定是否将主题应用于整个应用程序                                            |
 
