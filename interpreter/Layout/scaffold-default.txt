@@ -1,0 +1,31 @@
+super.key: 继承自父类 StatefulWidget 的 key 参数，用于标识 Scaffold。
+appBar: 顶部导航栏的小部件，通常使用 AppBar。
+body: 主要内容区域的小部件，用于放置应用程序的主要内容。
+floatingActionButton: 悬浮按钮的小部件。
+floatingActionButtonLocation: 悬浮按钮的位置。可以是以下预定义的枚举值之一：
+FloatingActionButtonLocation.endFloat: 默认值，悬浮按钮位于右下角。
+FloatingActionButtonLocation.centerFloat: 悬浮按钮位于底部中心位置。
+FloatingActionButtonLocation.centerDocked: 悬浮按钮位于底部中心位置，且与底部导航栏重叠。
+FloatingActionButtonLocation.endDocked: 悬浮按钮位于右下角，且与底部导航栏重叠。
+floatingActionButtonAnimator: 悬浮按钮动画控制器。可以是以下预定义的枚举值之一：
+FloatingActionButtonAnimator.scaling: 默认值，悬浮按钮会缩放进入和退出。
+FloatingActionButtonAnimator.floating: 悬浮按钮会浮动进入和退出。
+persistentFooterButtons: 位于 body 下方的持续显示的按钮列表。
+persistentFooterAlignment: 持续按钮的对齐方式，默认值为 AlignmentDirectional.centerEnd，表示持续按钮居中对齐并靠近屏幕右侧。
+drawer: 抽屉菜单的小部件，通常使用 Drawer。
+onDrawerChanged: 抽屉菜单状态变化时的回调函数。
+endDrawer: 右侧抽屉菜单的小部件，通常使用 Drawer。
+onEndDrawerChanged: 右侧抽屉菜单状态变化时的回调函数。
+bottomNavigationBar: 底部导航栏的小部件。
+bottomSheet: 底部弹出的小部件，类似于 showBottomSheet 方法的内容。
+backgroundColor: 背景颜色。
+resizeToAvoidBottomInset: 设置为 false 时，键盘弹出时不会调整内容大小以避免底部遮挡。
+primary: 一个可选的布尔值，用于指示是否为主滚动视图。
+drawerDragStartBehavior: 抽屉菜单的拖动行为起始位置，默认为 DragStartBehavior.start。
+extendBody: 设置为 true 时，内容会延伸到导航栏、底部导航栏和悬浮按钮下面。
+extendBodyBehindAppBar: 设置为 true 时，内容会延伸到导航栏下面。
+drawerScrimColor: 抽屉菜单背景遮罩的颜色。
+drawerEdgeDragWidth: 抽屉菜单从屏幕边缘拖拽打开的宽度，默认为 null，表示使用系统默认值。
+drawerEnableOpenDragGesture: 设置为 false 时，禁用抽屉菜单的从屏幕边缘拖拽打开的手势。
+endDrawerEnableOpenDragGesture: 设置为 false 时，禁用右侧抽屉菜单的从屏幕边缘拖拽打开的手势。
+restorationId: 用于存储和恢复 Scaffold 的状态的标识符。

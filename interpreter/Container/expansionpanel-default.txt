@@ -1,0 +1,5 @@
+headerBuilder: 一个回调函数，该函数接受BuildContext和bool类型的isExpanded参数，并返回一个小部件。它用于构建面板的标题部分，通常是一个ListTile或类似的小部件。
+body: 一个小部件，表示面板展开时显示的内容部分。
+isExpanded: 一个布尔值，表示面板是否默认展开。默认为false，即默认情况下面板是折叠的。
+canTapOnHeader: 一个布尔值，表示用户是否可以点击面板的标题来展开或折叠内容。默认为false，这意味着用户只能通过点击展开图标来控制展开/折叠操作。如果将其设置为true，则用户可以通过点击标题来控制展开/折叠操作。
+backgroundColor: 一个Color对象，表示面板的背景颜色。可以使用它来设置面板的背景颜色。

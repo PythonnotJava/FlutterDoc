@@ -1,0 +1,27 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数，用于继承自父类的 key 属性。
+items：一个包含所有选项的列表，每个选项由 DropdownMenuItem<T> 小部件表示。必须提供非空列表。
+selectedItemBuilder：一个构建器函数，用于在选择的值下方构建一个小部件。这是一个可选参数。
+value：当前选中的值，必须与 items 中的某个值相匹配，用于确定默认选中项。这是一个可选参数。
+hint：在下拉菜单中显示的提示内容，通常用于指示用户进行选择。这是一个可选参数。
+disabledHint：在下拉菜单中显示的禁用时的提示内容，通常用于在 DropdownButton 被禁用时显示。这是一个可选参数。
+onChanged：当用户选择一个选项时的回调函数，接收一个泛型参数 T?，表示选择的值。这是一个必需参数。
+onTap：当用户点击 DropdownButton 时的回调函数。这是一个可选参数。
+elevation：下拉菜单的阴影高度，默认为 8。这是一个可选参数。
+style：下拉菜单中选项的文本样式。这是一个可选参数。
+underline：下拉菜单底部的线条，通常用于指示菜单的边界。这是一个可选参数。
+icon：下拉箭头图标。这是一个可选参数。
+iconDisabledColor：下拉箭头图标在禁用状态时的颜色。这是一个可选参数。
+iconEnabledColor：下拉箭头图标在可用状态时的颜色。这是一个可选参数。
+iconSize：下拉箭头图标的大小，默认为 24.0。这是一个可选参数。
+isDense：是否使用较小的垂直大小，通常用于在较密集的布局中。这是一个可选参数。
+isExpanded：是否将下拉菜单的宽度展开到与父容器一样宽，默认为 false。这是一个可选参数。
+itemHeight：每个选项的高度，默认为 kMinInteractiveDimension，即默认高度。这是一个可选参数。
+focusColor：控件获取焦点时的颜色。这是一个可选参数。
+focusNode：控制控件是否具有焦点。这是一个可选参数。
+autofocus：是否自动获取焦点。默认为 false。这是一个可选参数。
+dropdownColor：下拉菜单的背景颜色。这是一个可选参数。
+menuMaxHeight：下拉菜单的最大高度。这是一个可选参数。
+enableFeedback：是否启用触觉反馈。这是一个可选参数。
+alignment：下拉菜单的对齐方式，默认为 AlignmentDirectional.centerStart。这是一个可选参数。
+borderRadius：下拉菜单的圆角。这是一个可选参数。
+padding：下拉菜单的内边距。这是一个可选参数。

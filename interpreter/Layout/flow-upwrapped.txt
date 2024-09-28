@@ -1,0 +1,4 @@
+super.key: 这是继承自父类的key属性，用于在Widget树中唯一标识Flow.unwrapped。
+required this.delegate: 这是一个必需的参数，用于指定Flow.unwrapped的布局规则。delegate是一个FlowDelegate类型的对象，您需要创建一个继承自FlowDelegate的自定义类，并在其中实现布局规则。
+super.children: 这是继承自父类的children属性，用于传递Flow.unwrapped的子组件列表。与常规的Flow不同，Flow.unwrapped会忽略子组件的尺寸，因此super.children参数在此构造函数中并不会用到。
+this.clipBehavior = Clip.hardEdge: 这是一个可选参数，用于控制子组件在Flow.unwrapped范围外的裁剪行为。默认为Clip.hardEdge，表示在Flow.unwrapped范围外剪裁子组件。其他选项为Clip.none和Clip.antiAlias。

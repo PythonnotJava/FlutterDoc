@@ -1,0 +1,11 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数。
+direction：设置子组件的排列方向，可以是 Axis.horizontal（水平方向，默认）或 Axis.vertical（垂直方向）。
+alignment：设置子组件在主轴（水平或垂直）上的对齐方式，默认为 WrapAlignment.start。
+spacing：设置子组件在主轴方向上的间距，默认为0.0。
+runAlignment：设置子组件在交叉轴（与主轴垂直的方向）上的对齐方式，默认为 WrapAlignment.start。
+runSpacing：设置子组件在交叉轴方向上的间距，默认为0.0。
+crossAxisAlignment：设置子组件在交叉轴方向上的对齐方式，默认为 WrapCrossAlignment.start。
+textDirection：设置文本方向，可以是 TextDirection.ltr（从左到右）或 TextDirection.rtl（从右到左）。如果不指定，默认将使用父级的 Directionality。
+verticalDirection：设置子组件在垂直方向的对齐方式，默认为 VerticalDirection.down。
+clipBehavior：定义如何剪辑超出容器边界的内容。默认为 Clip.none，表示不剪辑。
+children：要在 Wrap 中显示的子组件列表。这是一个可选参数，可以是一个空列表。

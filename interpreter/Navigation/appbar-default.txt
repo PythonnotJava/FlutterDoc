@@ -1,0 +1,30 @@
+super.key：用于继承自父类的Widget的key。
+this.leading：在AppBar左侧显示的widget，通常是一个返回按钮或一个菜单图标按钮。
+this.automaticallyImplyLeading：如果leading为null，是否自动添加一个默认的返回按钮。
+this.title：AppBar中间显示的widget，通常是一个标题文本。
+this.actions：在AppBar右侧显示的一组widget，通常是一些操作按钮。
+this.flexibleSpace：AppBar的可伸缩区域，通常用于显示背景图片或其他自定义内容。
+this.bottom：在AppBar底部显示的widget，通常是一个TabBar或底部导航栏。
+this.elevation：AppBar的阴影高度。
+this.scrolledUnderElevation：当AppBar在滚动视图上方时的阴影高度。
+this.notificationPredicate：用于控制是否要显示滚动通知的回调函数。
+this.shadowColor：AppBar的阴影颜色。
+this.surfaceTintColor：AppBar的表面颜色，用于控制透明度。
+this.shape：AppBar的形状，可以是一个圆角矩形或其他自定义形状。
+this.backgroundColor：AppBar的背景颜色。
+this.foregroundColor：AppBar的前景颜色，包括文本和图标颜色。
+this.iconTheme：AppBar中图标的主题样式。
+this.actionsIconTheme：AppBar中操作按钮图标的主题样式。
+this.primary：AppBar是否是页面的主要AppBar。
+this.centerTitle：是否将标题居中显示。
+this.excludeHeaderSemantics：是否排除AppBar的语义信息。
+this.titleSpacing：标题文本与其他widget之间的间距。
+this.toolbarOpacity：AppBar的工具栏透明度。
+this.bottomOpacity：AppBar底部widget的透明度。
+this.toolbarHeight：AppBar工具栏的高度。
+this.leadingWidth：leading widget的宽度。
+this.toolbarTextStyle：工具栏文本的样式。
+this.titleTextStyle：标题文本的样式。
+this.systemOverlayStyle：AppBar的系统覆盖样式，用于控制状态栏和导航栏的颜色和样式。
+this.forceMaterialTransparency：是否强制使用Material Design的透明度规则。
+this.clipBehavior：AppBar的剪切行为。

@@ -1,0 +1,4 @@
+super.key: 组件的唯一标识符，可选参数，继承自父类 StatelessWidget。
+this.header: 可选参数，用于在网格项顶部显示一个标题或者其他内容的小部件。
+this.footer: 可选参数，用于在网格项底部显示一个脚注或者其他内容的小部件。
+required this.child: 这是一个必需的参数，用于指定网格项中的主要内容，通常是一个子组件，例如 Image、Text 或者其他小部件。

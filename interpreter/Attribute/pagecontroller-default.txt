@@ -1,0 +1,3 @@
+this.initialPage: 初始页面的索引，默认为0，表示第一个页面。
+this.keepPage: 是否保持页面状态，默认为true。如果设置为true，页面在切换后将保持滚动位置，如果设置为false，则在切换页面时会重新滚动到页面的起始位置。
+this.viewportFraction: 页面在视口中的占比，默认为1.0，表示每个页面都占据整个视口。

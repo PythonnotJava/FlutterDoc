@@ -1,0 +1,23 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数。
+avatar：在 Chip 左侧显示的小组件，通常用于显示一个图标或头像。这是一个可选参数。
+label：Chip 的文本标签，是一个必需参数，用于显示主要内容。
+labelStyle：用于设置 label 的样式，如字体大小、颜色等。这是一个可选参数。
+labelPadding：文本标签的内边距。这是一个可选参数。
+deleteIcon：在 Chip 右侧显示的删除图标。这是一个可选参数。
+onDeleted：当删除图标被点击时的回调函数。这是一个可选参数。
+deleteIconColor：删除图标的颜色。这是一个可选参数。
+deleteButtonTooltipMessage：删除按钮的提示信息。这是一个可选参数。
+side：Chip 组件周围的边框样式。这是一个可选参数。
+shape：Chip 的形状，可以是圆形或矩形。这是一个可选参数。
+clipBehavior：定义如何剪辑超出 Chip 边界的内容。默认为 Clip.none，表示不剪辑。
+focusNode：聚焦节点，用于处理焦点事件。这是一个可选参数。
+autofocus：是否自动聚焦。默认为 false。
+backgroundColor：Chip 的背景颜色。这是一个可选参数。
+padding：内边距。这是一个可选参数。
+visualDensity：视觉密度。这是一个可选参数。
+materialTapTargetSize：Material风格的点击目标大小。这是一个可选参数。
+elevation：Chip 的阴影高度。这是一个可选参数。
+shadowColor：阴影颜色。这是一个可选参数。
+surfaceTintColor：表面颜色。这是一个可选参数。
+iconTheme：图标主题。这是一个可选参数。
+useDeleteButtonTooltip：标记是否使用删除按钮的工具提示。此参数已被弃用，请使用 deleteButtonTooltipMessage。这是一个可选参数。

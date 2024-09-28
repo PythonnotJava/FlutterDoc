@@ -1,0 +1,12 @@
+super.settings: PageRoute 的 settings 参数，表示路由的配置信息。通常可以为空，除非你需要在路由之间传递一些数据。
+required this.pageBuilder: 必须参数，是一个回调函数，用于构建页面的内容。它接受三个参数：BuildContext（上下文）、Animation<double>（页面切换时的动画）、Animation<double>（次级动画）并返回一个 Widget。
+this.transitionsBuilder: 可选参数，是一个回调函数，用于构建页面切换时的动画。它接受四个参数：BuildContext（上下文）、Animation<double>（页面切换时的动画）、Animation<double>（次级动画）、Widget（当前页面的内容）并返回一个新的 Widget。默认值为 _defaultTransitionsBuilder，它是一个简单的渐变过渡。
+this.transitionDuration: 可选参数，表示页面切换动画的持续时间，默认为 const Duration(milliseconds: 300)。
+this.reverseTransitionDuration: 可选参数，表示页面切换动画的反向持续时间，即返回到上一个页面的动画持续时间，默认为 const Duration(milliseconds: 300)。
+this.opaque: 可选参数，一个布尔值，表示新页面是否是不透明的。如果为 true，则新页面的背景会覆盖上一个页面；如果为 false，则新页面的背景会透明地叠在上一个页面之上，默认为 true。
+this.barrierDismissible: 可选参数，一个布尔值，表示是否可以通过点击背景来关闭当前页面。如果为 true，则点击背景会关闭页面；如果为 false，则不会，默认为 false。
+this.barrierColor: 可选参数，表示背景的颜色，可以是 Color 类型。
+this.barrierLabel: 可选参数，一个字符串，表示用于描述背景的语义标签。
+this.maintainState: 可选参数，一个布尔值，表示是否保持上一个页面的状态。如果为 true，则上一个页面的状态会被保持；如果为 false，则上一个页面会在切换时被销毁，默认为 true。
+super.fullscreenDialog: PageRoute 的 fullscreenDialog 参数，表示是否将页面作为全屏对话框显示，默认为 false。
+super.allowSnapshotting: PageRoute 的 allowSnapshotting 参数，表示是否允许页面截图，默认为 true。如果设置为 false，页面切换时将不会生成截图，可能会降低性能。

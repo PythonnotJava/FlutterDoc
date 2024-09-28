@@ -1,0 +1,25 @@
+super.key: 继承自父类的可选键，用于识别小部件。
+required this.children: 必需参数，一个包含所有按钮的小部件列表。
+required this.isSelected: 必需参数，一个布尔值列表，用于指示每个按钮是否处于选中状态。
+this.onPressed: 可选参数，一个回调函数，用于处理按钮被点击时的事件。
+this.mouseCursor: 可选参数，用于指定鼠标指针的样式。
+this.tapTargetSize: 可选参数，指定按钮的点击目标大小。
+this.textStyle: 可选参数，用于指定按钮文本的样式。
+this.constraints: 可选参数，用于指定按钮的尺寸约束。
+this.color: 可选参数，指定按钮的颜色。
+this.selectedColor: 可选参数，指定选中按钮的颜色。
+this.disabledColor: 可选参数，指定禁用按钮的颜色。
+this.fillColor: 可选参数，指定按钮的填充颜色。
+this.focusColor: 可选参数，指定按钮获得焦点时的颜色。
+this.highlightColor: 可选参数，指定按钮被按下时的颜色。
+this.hoverColor: 可选参数，指定鼠标悬停在按钮上时的颜色。
+this.splashColor: 可选参数，指定按钮被按下时的水波纹颜色。
+this.focusNodes: 可选参数，用于指定每个按钮的焦点节点。
+this.renderBorder: 可选参数，指定是否渲染按钮的边框。
+this.borderColor: 可选参数，指定按钮边框的颜色。
+this.selectedBorderColor: 可选参数，指定选中按钮边框的颜色。
+this.disabledBorderColor: 可选参数，指定禁用按钮边框的颜色。
+this.borderRadius: 可选参数，指定按钮边框的圆角半径。
+this.borderWidth: 可选参数，指定按钮边框的宽度。
+this.direction: 可选参数，指定按钮排列的方向，默认为水平方向。
+this.verticalDirection: 可选参数，指定按钮在垂直方向上的排列方式，默认为向下排列。

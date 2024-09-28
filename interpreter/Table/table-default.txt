@@ -1,0 +1,8 @@
+Key? key：小部件的唯一标识符，可以用于查找和操作小部件。
+List<TableRow> children：表格的内容，是一个包含多个TableRow的列表。每个TableRow代表一行数据，可以包含多个单元格。默认值是一个空的列表const <TableRow>[]。
+Map<int, TableColumnWidth>? columnWidths：用于指定每一列的宽度的映射表。键是列的索引，值是TableColumnWidth对象，用于指定该列的宽度。默认值是null，表示使用默认的列宽度defaultColumnWidth。
+TableColumnWidth defaultColumnWidth：默认的列宽度。当表格中的某一列没有指定宽度时，将使用该默认宽度。默认值是const FlexColumnWidth()，表示使用弹性列宽度。
+TextDirection? textDirection：表格中文本的方向。可以设置为TextDirection.ltr（从左到右）或TextDirection.rtl（从右到左）。默认值是null，表示采用默认的文本方向。
+TableBorder? border：表格的边框样式。你可以在这里设置表格的边框样式，包括颜色、宽度等。默认值是null，表示没有边框。
+TableCellVerticalAlignment defaultVerticalAlignment：默认的单元格垂直对齐方式。可以设置为TableCellVerticalAlignment.top（顶部对齐）、TableCellVerticalAlignment.middle（居中对齐）或TableCellVerticalAlignment.bottom（底部对齐）。默认值是TableCellVerticalAlignment.top。
+TextBaseline? textBaseline：用于对齐文本的基线。通常不需要设置，除非你需要精确地控制文本的对齐方式。默认值是null。

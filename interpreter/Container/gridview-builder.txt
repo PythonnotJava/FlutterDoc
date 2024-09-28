@@ -1,0 +1,21 @@
+super.key: 组件的唯一标识符，可选参数，继承自父类 GridView。
+super.scrollDirection: 指定滚动的方向，可以是 Axis.vertical（垂直方向）或 Axis.horizontal（水平方向），继承自父类 GridView。
+super.reverse: 布尔值，表示是否反转滚动方向，继承自父类 GridView。
+super.controller: 一个 ScrollController 对象，可以用于控制滚动位置和监听滚动事件，继承自父类 GridView。
+super.primary: 布尔值，表示是否将此 GridView 设置为主滚动视图，继承自父类 GridView。
+super.physics: 指定滚动行为的滚动物理属性，继承自父类 GridView。
+super.shrinkWrap: 布尔值，表示是否根据子组件的总长度来调整 GridView 的大小，继承自父类 GridView。
+super.padding: 一个 EdgeInsets 对象，表示 GridView 的内边距，继承自父类 GridView。
+required this.gridDelegate: 这是一个必需的参数，它指定了网格的布局规则，通常使用 SliverGridDelegateWith... 类的一个子类，例如 SliverGridDelegateWithFixedCrossAxisCount、SliverGridDelegateWithMaxCrossAxisExtent 等。
+required NullableIndexedWidgetBuilder itemBuilder: 构建子组件的回调函数。当网格需要显示一个特定索引位置的子组件时，该回调函数会被调用，并返回对应索引的子组件。
+ChildIndexGetter? findChildIndexCallback: 一个回调函数，用于查找给定键的子组件索引。
+int? itemCount: 子组件的数量。如果提供 itemCount 参数，则 itemBuilder 回调函数将在列表中显示指定数量的子组件。如果不提供 itemCount 参数，则必须提供 semanticChildCount 参数。
+bool addAutomaticKeepAlives = true: 布尔值，表示是否在可见范围内自动保持子组件的状态。
+bool addRepaintBoundaries = true: 布尔值，表示是否在子组件之间添加重绘边界，可以提高性能。
+bool addSemanticIndexes = true: 布尔值，表示是否为语义框架添加语义索引。
+super.cacheExtent: 指定预加载的区域，可以缓存超出屏幕的子组件，继承自父类 GridView。
+int? semanticChildCount: 用于指定语义子组件的数量。如果不提供 semanticChildCount 参数，则必须提供 itemCount 参数。
+super.dragStartBehavior: 用于确定开始拖动手势的处理方式，继承自父类 GridView。
+super.keyboardDismissBehavior: 用于控制键盘如何响应滚动行为，继承自父类 GridView。
+super.restorationId: 用于保存组件的状态并进行恢复，继承自父类 GridView。
+super.clipBehavior: 用于指定子组件的裁剪行为，继承自父类 GridView。

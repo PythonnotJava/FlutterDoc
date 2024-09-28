@@ -1,0 +1,3 @@
+key：一个可选的参数，用于在小部件树中唯一标识 SliverGrid。
+delegate：一个必需的参数，指定了网格布局的代理，可以是 SliverGridDelegate 的实例，决定了网格的布局方式和行为。
+childrenDelegate：一个必需的参数，指定了子项的代理，可以是 SliverChildBuilderDelegate 或 SliverChildListDelegate 的实例，用于提供网格中的子项。

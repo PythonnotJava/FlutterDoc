@@ -1,0 +1,2 @@
+width: 指定宽度的值，可以是一个非负的有限的 double 类型数值，默认值为 double.infinity，表示宽度没有限制。
+height: 指定高度的值，可以是一个非负的有限的 double 类型数值，默认值为 double.infinity，表示高度没有限制。

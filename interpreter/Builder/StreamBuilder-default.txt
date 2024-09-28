@@ -1,0 +1,4 @@
+super.key: 这是继承自父类的 key 参数，用于标识 StreamBuilder 的身份。
+this.initialData: 这是流的初始数据，当流还没有发出任何数据时会使用这个初始数据。
+required super.stream: 这是 StreamBuilder 必须的参数，用于传入一个 Stream 对象，它会监听这个流的数据变化。
+required this.builder: 这是一个必需的回调函数，用于构建基于流数据的 Widget 树。

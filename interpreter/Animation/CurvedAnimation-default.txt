@@ -1,0 +1,3 @@
+Animation<double> parent: 要包装的父动画。通常是一个 AnimationController，但可以是任何 Animation<double>。
+Curve curve: 用于描述动画曲线的对象。这决定了动画值是如何随时间变化的。
+Curve? reverseCurve: 一个可选的曲线，用于反向动画。如果未提供，则默认使用与正向动画相同的曲线。

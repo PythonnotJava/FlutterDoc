@@ -1,0 +1,9 @@
+super.key：继承自父类的key参数。
+required this.child：按钮的子部件，通常是一个Text小部件，用于显示按钮的文本。
+this.padding：按钮的内边距。
+this.disabledColor：按钮禁用时的背景颜色，默认为CupertinoColors.quaternarySystemFill。
+this.minSize：按钮的最小尺寸，默认为kMinInteractiveDimensionCupertino，即44像素。
+this.pressedOpacity：按钮被按下时的不透明度，默认为0.4。
+this.borderRadius：按钮的边框半径，默认为BorderRadius.all(Radius.circular(8.0))，即圆角半径为8像素。
+this.alignment：按钮内子部件的对齐方式，默认为Alignment.center，即居中对齐。
+required this.onPressed：按钮被按下时的回调函数，是一个必需参数。

@@ -1,0 +1,16 @@
+super.key: 组件的唯一标识符，可选参数，继承自父类 GridView。
+super.scrollDirection: 指定滚动的方向，可以是 Axis.vertical（垂直方向）或 Axis.horizontal（水平方向），继承自父类 GridView。
+super.reverse: 布尔值，表示是否反转滚动方向，继承自父类 GridView。
+super.controller: 一个 ScrollController 对象，可以用于控制滚动位置和监听滚动事件，继承自父类 GridView。
+super.primary: 布尔值，表示是否将此 GridView 设置为主滚动视图，继承自父类 GridView。
+super.physics: 指定滚动行为的滚动物理属性，继承自父类 GridView。
+super.shrinkWrap: 布尔值，表示是否根据子组件的总长度来调整 GridView 的大小，继承自父类 GridView。
+super.padding: 一个 EdgeInsets 对象，表示 GridView 的内边距，继承自父类 GridView。
+required this.gridDelegate: 这是一个必需的参数，它指定了网格的布局规则，通常使用 SliverGridDelegateWith... 类的一个子类，例如 SliverGridDelegateWithFixedCrossAxisCount、SliverGridDelegateWithMaxCrossAxisExtent 等。
+required this.childrenDelegate: 这是一个必需的参数，它是 SliverChildDelegate 类型的对象，用于自定义子组件的构建逻辑。通过 SliverChildBuilderDelegate 或 SliverChildListDelegate，你可以控制子组件的创建方式和显示的内容。
+super.cacheExtent: 指定预加载的区域，可以缓存超出屏幕的子组件，继承自父类 GridView。
+super.semanticChildCount: 用于指定语义子组件的数量，继承自父类 GridView。
+super.dragStartBehavior: 用于确定开始拖动手势的处理方式，继承自父类 GridView。
+super.keyboardDismissBehavior: 用于控制键盘如何响应滚动行为，继承自父类 GridView。
+super.restorationId: 用于保存组件的状态并进行恢复，继承自父类 GridView。
+super.clipBehavior: 用于指定子组件的裁剪行为，继承自父类 GridView。

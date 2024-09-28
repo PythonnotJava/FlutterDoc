@@ -1,0 +1,8 @@
+key：一个可选的参数，用于在小部件树中唯一标识 SliverGrid.builder。
+gridDelegate：一个必需的参数，指定了网格布局的代理，可以是 SliverGridDelegate 的实例，决定了网格的布局方式和行为。
+itemBuilder：一个必需的参数，是一个回调函数，它接收 BuildContext 和 int 参数，用于构建网格中指定索引位置的子项的小部件。
+findChildIndexCallback：一个可选的参数，是一个回调函数，它接收一个小部件对象，并返回其索引值，用于查找子项的索引。
+itemCount：一个可选的参数，指定子项的数量。如果不提供此参数，则构建器函数将会无限调用，直到 itemBuilder 返回 null。
+addAutomaticKeepAlives：一个可选的参数，指定是否为每个子项添加 AutomaticKeepAlive 小部件以保持其状态。默认为 true。
+addRepaintBoundaries：一个可选的参数，指定是否为每个子项添加重绘边界，以避免不必要的重绘。默认为 true。
+addSemanticIndexes：一个可选的参数，指定是否为每个子项添加语义索引，以支持辅助功能。默认为 true。

@@ -1,0 +1,11 @@
+hintText：提示文本，用于提示用户应该输入什么。
+floatingLabelBehavior：悬浮标签的行为方式，如始终显示、自动显示等。
+floatingLabelAlignment：悬浮标签的对齐方式。
+hintStyle：提示文本的样式。
+hintTextDirection：提示文本的方向。
+filled：是否给输入字段添加背景填充色。
+fillColor：输入字段的背景填充色。
+focusColor：输入字段在获得焦点时的颜色。
+hoverColor：鼠标悬停在输入字段上时的颜色
+border：边框样式，默认为InputBorder.none，即没有边框。
+enabled：输入字段是否可用。

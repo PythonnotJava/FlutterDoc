@@ -1,0 +1,10 @@
+this.text：文本内容。
+this.children：包含在该文本片段内的子文本片段列表。
+super.style：继承自父类的文本样式。
+this.recognizer：用于处理识别操作（如点击、长按等）的手势识别器。
+MouseCursor? mouseCursor：指定鼠标悬停在该文本片段上时的鼠标指针样式。
+this.onEnter：当鼠标进入该文本片段时的回调函数。
+this.onExit：当鼠标离开该文本片段时的回调函数。
+this.semanticsLabel：用于无障碍功能的语义标签。
+this.locale：文本片段的地区设置。
+this.spellOut：是否对该文本片段进行拼写。

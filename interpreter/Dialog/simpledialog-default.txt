@@ -1,0 +1,15 @@
+Key? key：小部件的唯一标识符，可以用于查找和操作小部件。
+Widget? title：对话框的标题。你可以在这里指定对话框的标题，用于描述对话框的内容或目的。
+EdgeInsetsGeometry titlePadding：标题区域的内边距。你可以在这里设置对话框标题区域的边距。默认值是const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0)。
+TextStyle? titleTextStyle：标题的文本样式。你可以在这里设置标题文本的样式，例如字体、颜色、大小等。
+List<Widget>? children：一个小部件列表，用于显示对话框的内容。通常，这里会放置一组选项供用户选择。
+EdgeInsetsGeometry contentPadding：内容区域的内边距。你可以在这里设置对话框内容区域的边距。默认值是const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0)。
+Color? backgroundColor：对话框的背景颜色。你可以在这里设置对话框的背景颜色。
+double? elevation：对话框的阴影高度。你可以在这里设置对话框的阴影高度。
+Color? shadowColor：对话框的阴影颜色。你可以在这里设置对话框的阴影颜色。
+Color? surfaceTintColor：表面的着色颜色。通常用于在对话框出现时背景内容的颜色变化。
+String? semanticLabel：用于辅助技术的文本标签。当对话框出现时，这段文字可以帮助屏幕阅读器等辅助技术标识对话框的用途。
+EdgeInsetsGeometry insetPadding：内边距。指定在对话框外部添加的空白区域。默认值是一个默认的内边距。
+Clip? clipBehavior：用于决定如何裁剪对话框的内容。默认值是Clip.none，表示不进行裁剪。
+ShapeBorder? shape：对话框的形状。你可以在这里设置对话框的边框形状。
+AlignmentGeometry? alignment：对话框的内容在对话框内的对齐方式。默认值是Alignment.center。

@@ -1,0 +1,6 @@
+key：一个可选的参数，用于在小部件树中唯一标识 SliverGrid.count。
+crossAxisCount：一个必需的参数，指定网格布局中每行的子项数量。
+mainAxisSpacing：一个可选的参数，指定在主轴上相邻子项之间的间距。
+crossAxisSpacing：一个可选的参数，指定在交叉轴上相邻子项之间的间距。
+childAspectRatio：一个可选的参数，指定子项的宽高比。
+children：一个可选的参数，指定网格中的子项列表。

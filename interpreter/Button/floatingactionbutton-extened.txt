@@ -1,0 +1,27 @@
+super.key：继承自父类的键值（key）。
+this.tooltip：操作按钮的提示文本。
+this.foregroundColor：操作按钮的前景色。
+this.backgroundColor：操作按钮的背景色。
+this.focusColor：操作按钮获取焦点时的颜色。
+this.hoverColor：操作按钮悬停时的颜色。
+this.heroTag：操作按钮的hero标签，用于在页面过渡时共享动画。
+this.elevation：操作按钮的标准高度。
+this.focusElevation：操作按钮获取焦点时的高度。
+this.hoverElevation：操作按钮悬停时的高度。
+this.splashColor：操作按钮被点击时的颜色。
+this.highlightElevation：操作按钮被按下时的高度。
+this.disabledElevation：操作按钮禁用时的高度。
+required this.onPressed：操作按钮被按下时触发的回调函数，是一个必需参数。
+this.mouseCursor：鼠标指针悬停在操作按钮上时的样式，默认为系统默认点击样式（SystemMouseCursors.click）。
+this.shape：操作按钮的形状。
+this.isExtended：操作按钮是否为扩展模式，默认为true。
+this.materialTapTargetSize：操作按钮的Tap Target大小。
+this.clipBehavior：操作按钮的裁剪行为。
+this.focusNode：操作按钮的焦点节点。
+this.autofocus：操作按钮是否自动获取焦点，默认为false。
+this.extendedIconLabelSpacing：扩展型按钮中图标和标签之间的间距。
+this.extendedPadding：扩展型按钮的内边距。
+this.extendedTextStyle：扩展型按钮中标签的文本样式。
+Widget? icon：操作按钮的图标部分。
+required Widget label：操作按钮的标签部分，是一个必需参数。
+this.enableFeedback：操作按钮是否启用触觉反馈。

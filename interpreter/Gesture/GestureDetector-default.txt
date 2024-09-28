@@ -1,0 +1,65 @@
+super.key: 用于接收父类的 key，用于构建 Widget 树的唯一标识。
+child: 被 GestureDetector 包裹的子组件，这是 GestureDetector 所作用的范围。
+onTapDown: 当用户按下屏幕时触发的回调函数。
+onTapUp: 当用户在屏幕上抬起手指时触发的回调函数。
+onTap: 用户轻触屏幕时触发的回调函数。
+onTapCancel: 当轻触被取消时触发的回调函数，例如，用户按下后移出 GestureDetector 区域。
+onSecondaryTap: 当用户使用第二个手指轻触屏幕时触发的回调函数。
+onSecondaryTapDown: 当用户用第二个手指按下屏幕时触发的回调函数。
+onSecondaryTapUp: 当用户用第二个手指在屏幕上抬起时触发的回调函数。
+onSecondaryTapCancel: 当第二个手指轻触被取消时触发的回调函数。
+onTertiaryTapDown: 当用户用第三个手指按下屏幕时触发的回调函数。
+onTertiaryTapUp: 当用户用第三个手指在屏幕上抬起时触发的回调函数。
+onTertiaryTapCancel: 当第三个手指轻触被取消时触发的回调函数。
+onDoubleTapDown: 当用户双击屏幕时触发的回调函数。
+onDoubleTap: 当用户双击屏幕时触发的回调函数。
+onDoubleTapCancel: 当双击被取消时触发的回调函数。
+onLongPressDown: 当用户长按屏幕时触发的回调函数。
+onLongPressCancel: 当长按被取消时触发的回调函数。
+onLongPress: 当用户长按屏幕一定时间后触发的回调函数。
+onLongPressStart: 当长按开始时触发的回调函数。
+onLongPressMoveUpdate: 当长按移动时触发的回调函数。
+onLongPressUp: 当长按抬起时触发的回调函数。
+onLongPressEnd: 当长按结束时触发的回调函数。
+onSecondaryLongPressDown: 当用户使用第二个手指长按屏幕时触发的回调函数。
+onSecondaryLongPressCancel: 当第二个手指长按被取消时触发的回调函数。
+onSecondaryLongPress: 当用户使用第二个手指长按屏幕一定时间后触发的回调函数。
+onSecondaryLongPressStart: 当第二个手指长按开始时触发的回调函数。
+onSecondaryLongPressMoveUpdate: 当第二个手指长按移动时触发的回调函数。
+onSecondaryLongPressUp: 当第二个手指长按抬起时触发的回调函数。
+onSecondaryLongPressEnd: 当第二个手指长按结束时触发的回调函数。
+onTertiaryLongPressDown: 当用户使用第三个手指长按屏幕时触发的回调函数。
+onTertiaryLongPressCancel: 当第三个手指长按被取消时触发的回调函数。
+onTertiaryLongPress: 当用户使用第三个手指长按屏幕一定时间后触发的回调函数。
+onTertiaryLongPressStart: 当第三个手指长按开始时触发的回调函数。
+onTertiaryLongPressMoveUpdate: 当第三个手指长按移动时触发的回调函数。
+onTertiaryLongPressUp: 当第三个手指长按抬起时触发的回调函数。
+onTertiaryLongPressEnd: 当第三个手指长按结束时触发的回调函数。
+onVerticalDragDown: 当用户在垂直方向开始拖动时触发的回调函数。
+onVerticalDragStart: 当用户在垂直方向开始拖动时触发的回调函数。
+onVerticalDragUpdate: 当用户在垂直方向拖动时触发的回调函数。
+onVerticalDragEnd: 当用户在垂直方向拖动结束时触发的回调函数。
+onVerticalDragCancel: 当垂直拖动被取消时触发的回调函数。
+onHorizontalDragDown: 当用户在水平方向开始拖动时触发的回调函数。
+onHorizontalDragStart: 当用户在水平方向开始拖动时触发的回调函数。
+onHorizontalDragUpdate: 当用户在水平方向拖动时触发的回调函数。
+onHorizontalDragEnd: 当用户在水平方向拖动结束时触发的回调函数。
+onHorizontalDragCancel: 当水平拖动被取消时触发的回调函数。
+onForcePressStart: 当用户使用力按压屏幕时触发的回调函数。
+onForcePressPeak: 当力按压的强度达到峰值时触发的回调函数。
+onForcePressUpdate: 当力按压的强度更新时触发的回调函数。
+onForcePressEnd: 当力按压结束时触发的回调函数。
+onPanDown: 当用户开始拖动（手指接触屏幕）时触发的回调函数。
+onPanStart: 当用户开始拖动时触发的回调函数。
+onPanUpdate: 当用户拖动时触发的回调函数。
+onPanEnd: 当用户拖动结束时触发的回调函数。
+onPanCancel: 当拖动被取消时触发的回调函数。
+onScaleStart: 当用户开始缩放时触发的回调函数。
+onScaleUpdate: 当用户缩放时触发的回调函数。
+onScaleEnd: 当用户缩放结束时触发的回调函数。
+behavior: 定义了用户如何与 GestureDetector 交互的策略。
+excludeFromSemantics: 是否排除此 GestureDetector 从语义树中，默认为 false。
+dragStartBehavior: 定义了拖动行为的启动方式，默认为 DragStartBehavior.start。
+trackpadScrollCausesScale: 定义了是否使用触摸板滚动触发缩放，默认为 false。
+trackpadScrollToScaleFactor: 触摸板滚动触发缩放的因子，默认为 kDefaultTrackpadScrollToScaleFactor。
+supportedDevices: 一个可选的设备列表，定义了支持 GestureDetector 的设备。

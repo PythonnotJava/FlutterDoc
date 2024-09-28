@@ -1,0 +1,3 @@
+colorScheme: ColorScheme 对象，包含主要和次要颜色方案，以及亮度信息。
+textTheme: 可选的 TextTheme 对象，定义应用程序中文本样式的集合。
+useMaterial3: 是否使用 Material Design 3.0 样式。

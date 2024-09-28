@@ -1,0 +1,6 @@
+key：一个可选的参数，用于在小部件树中唯一标识 SliverGrid.extent。
+maxCrossAxisExtent：一个必需的参数，指定了子项在交叉轴上的最大范围。换句话说，它决定了子项的宽度（对于垂直网格）或高度（对于水平网格）。
+mainAxisSpacing：一个可选的参数，指定在主轴上相邻子项之间的间距。
+crossAxisSpacing：一个可选的参数，指定在交叉轴上相邻子项之间的间距。
+childAspectRatio：一个可选的参数，指定子项的宽高比。
+children：一个可选的参数，指定网格中的子项列表。

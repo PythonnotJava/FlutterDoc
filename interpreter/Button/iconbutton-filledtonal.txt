@@ -1,0 +1,23 @@
+super.key：继承自父类的键值（key）。
+this.iconSize：图标的尺寸。
+this.visualDensity：按钮的视觉密度。
+this.padding：按钮的内边距。
+this.alignment：图标在按钮内的对齐方式。
+this.splashRadius：点击水波纹效果的半径。
+this.color：按钮的背景颜色。
+this.focusColor：按钮获取焦点时的颜色。
+this.hoverColor：按钮悬停时的颜色。
+this.highlightColor：按钮被按下时的颜色。
+this.splashColor：点击水波纹效果的颜色。
+this.disabledColor：按钮禁用时的颜色。
+required this.onPressed：按钮被按下时的回调函数，是一个必需参数。
+this.mouseCursor：鼠标指针悬停在按钮上时的样式。
+this.focusNode：按钮的焦点节点。
+this.autofocus：按钮是否自动获取焦点，默认为false。
+this.tooltip：按钮的提示文本。
+this.enableFeedback：按钮是否启用触觉反馈。
+this.constraints：按钮的约束条件。
+this.style：按钮的文本样式。
+this.isSelected：按钮是否处于选中状态。
+this.selectedIcon：按钮选中状态下显示的图标。
+required this.icon：按钮的图标部分，是一个必需参数。

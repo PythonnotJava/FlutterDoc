@@ -1,0 +1,10 @@
+Key? key: 用于识别小部件的可选键。
+required VoidCallback? onPressed: 按钮按下时调用的必需回调函数。
+VoidCallback? onLongPress: 按钮长按时调用的可选回调函数。
+ButtonStyle? style: 定义按钮的样式，例如背景颜色、文本样式等。
+FocusNode? focusNode: 按钮的焦点节点。
+bool? autofocus: 指定按钮是否自动获取焦点。
+Clip? clipBehavior: 指定按钮的裁剪行为。
+MaterialStatesController? statesController: 状态控制器，用于自定义按钮在不同状态下的样式。
+required Widget icon: 显示在按钮上的图标小部件，它是必需的。
+required Widget label: 显示在按钮上的标签小部件，它是必需的。

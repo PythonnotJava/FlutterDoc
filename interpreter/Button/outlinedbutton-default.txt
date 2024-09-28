@@ -1,0 +1,11 @@
+super.key: 继承自父类的可选键，用于识别小部件。
+required super.onPressed: 继承自父类的必需回调函数，定义按钮按下时的行为。
+super.onLongPress: 继承自父类的可选回调函数，定义按钮长按时的行为。
+super.onHover: 继承自父类的可选回调函数，定义鼠标悬停在按钮上时的行为。
+super.onFocusChange: 继承自父类的可选回调函数，定义按钮焦点状态变化时的行为。
+super.style: 继承自父类的可选样式属性，定义按钮的外观。
+super.focusNode: 继承自父类的可选焦点节点，用于控制按钮的焦点行为。
+super.autofocus: 继承自父类的可选属性，定义按钮是否自动获取焦点，默认为 false。
+super.clipBehavior: 继承自父类的可选属性，定义按钮的裁剪行为，默认为 Clip.none。
+super.statesController: 继承自父类的可选状态控制器，用于自定义按钮在不同状态下的样式。
+required super.child: 继承自父类的必需子部件，用于显示在按钮上的内容。

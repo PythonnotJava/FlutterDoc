@@ -1,0 +1,4 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数。
+flex：决定该控件在主轴方向上所占的比例。默认为 1。这是一个可选参数。
+fit：决定子控件如何适应可用空间，可以是 FlexFit.tight 或 FlexFit.loose。默认为 FlexFit.loose。这是一个可选参数。
+child：必需参数，指定要在 Flexible 中显示的子控件。

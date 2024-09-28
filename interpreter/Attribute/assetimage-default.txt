@@ -1,0 +1,3 @@
+assetName：要加载的图像资源的名称。通常是图像文件的路径。
+bundle：要从中加载图像的AssetBundle，默认为当前包的AssetBundle。
+package：图像所属的包名称。

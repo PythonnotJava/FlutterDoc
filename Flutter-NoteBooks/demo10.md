@@ -16,6 +16,7 @@
 > * Wrap：用于实现自动换行的布局。
 > * Chip：用于显示简短信息的小组件，通常用于标签、标记或选择。
 > * Positioned：用于定位子部件的小部件之一。它通常用于 Stack 组件中，用于指定子部件的位置和尺寸。
+> * Flexible：用于布局的一个小部件，它允许子控件在主轴方向上占用可用空间的灵活性。
 
 ## Scaffold类
 ```text
@@ -737,3 +738,21 @@ Positioned.directional({
 | height        | double        | 子部件的高度                   |
 | child         | Widget        | 要定位的子部件，是一个必需参数          |
 
+## Flexible类
+### 默认构造函数
+```text
+Flexible({
+    super.key,
+    this.flex = 1,
+    this.fit = FlexFit.loose,
+    required super.child,
+  })
+```
+
+### Flexible(...)参数解析
+| 参数名称    | 使用类型    | 参数介绍                       |
+|---------|---------|----------------------------|
+| key     | Key     | 用于在树中唯一标识该组件               |
+| flex    | int     | 决定该控件在主轴方向上所占的比例           |
+| fit     | FlexFit | 决定子控件如何适应可用空间              |
+| child   | Widget  | 必需参数，指定要在 Flexible 中显示的子控件 |

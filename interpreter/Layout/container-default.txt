@@ -1,0 +1,14 @@
+super.key: 继承自父类 StatefulWidget 的 key 参数，用于标识 Container。
+alignment: 指定子小部件在容器内的对齐方式。可以是 Alignment 或 FractionalOffset 对象。
+padding: 定义容器的内边距（即子小部件与容器边缘之间的空白区域）。可以是 EdgeInsets 对象。
+color: 定义容器的背景颜色。可以是 Color 对象。
+decoration: 定义容器的装饰，如边框、圆角、阴影等。可以是 Decoration 对象。
+foregroundDecoration: 定义容器的前景装饰，它位于子小部件之上。可以是 Decoration 对象。
+width: 定义容器的宽度。如果未指定，则根据子小部件自动确定宽度。
+height: 定义容器的高度。如果未指定，则根据子小部件自动确定高度。
+constraints: 定义容器的限制条件，如最小宽高、最大宽高等。可以是 BoxConstraints 对象。
+margin: 定义容器的外边距（即容器与其父级小部件之间的空白区域）。可以是 EdgeInsets 对象。
+transform: 定义容器的变换矩阵，用于实现平移、旋转、缩放等变换效果。可以是 Matrix4 对象。
+transformAlignment: 定义变换矩阵的对齐方式。可以是 Alignment 或 FractionalOffset 对象。
+child: 容器中要显示的子小部件。
+clipBehavior: 定义是否对子小部件进行裁剪，默认值为 Clip.none，表示不裁剪。可以是 Clip 枚举值。

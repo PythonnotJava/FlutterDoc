@@ -1,0 +1,11 @@
+super.key：继承自父类的可选参数，用于标识控件的唯一性。
+child：要显示在圆形区域中心的控件，可以是图像、图标、文本等。
+backgroundColor：圆形区域的背景颜色。
+backgroundImage：圆形区域的背景图像。
+foregroundImage：圆形区域的前景图像。
+onBackgroundImageError：当背景图像加载出错时的回调函数。
+onForegroundImageError：当前景图像加载出错时的回调函数。
+foregroundColor：前景图像的颜色。
+radius：圆形区域的半径大小。
+minRadius：圆形区域的最小半径大小。
+maxRadius：圆形区域的最大半径大小。

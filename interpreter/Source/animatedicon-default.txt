@@ -1,0 +1,7 @@
+key（Key）：小部件的标识符，用于识别和检索小部件。
+icon（AnimatedIconData）：要显示的动画图标。AnimatedIconData是一个定义了图标和动画的类，它包含了图标的描述信息和动画的控制器。
+progress（Animation<double>）：动画的进度，是一个从0.0到1.0之间的动画值。您可以使用AnimationController或Tween来创建一个Animation<double>对象，用于控制动画的进度。
+color（Color）：图标的颜色（可选）。如果未提供，则默认使用当前主题的颜色。
+size（double）：图标的大小（可选）。如果未提供，则默认使用当前主题的图标大小。
+semanticLabel（String）：用于辅助功能的语义标签，描述了图标的含义（可选）。
+textDirection（TextDirection）：文本方向（可选）。如果未提供，则默认使用当前上下文的文本方向。

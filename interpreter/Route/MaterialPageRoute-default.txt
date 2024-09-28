@@ -1,0 +1,6 @@
+required this.builder: 必需参数，是一个回调函数，用于构建页面的内容。它接受一个 BuildContext 参数，并返回一个 Widget。
+super.settings: PageRoute 的 settings 参数，表示路由的配置信息。通常可以为空，除非你需要在路由之间传递一些数据。
+this.maintainState: 可选参数，一个布尔值，表示是否保持上一个页面的状态。如果为 true，则上一个页面的状态会被保持；如果为 false，则上一个页面会在切换时被销毁，默认为 true。
+super.fullscreenDialog: PageRoute 的 fullscreenDialog 参数，表示是否将页面作为全屏对话框显示，默认为 false。
+super.allowSnapshotting: PageRoute 的 allowSnapshotting 参数，表示是否允许页面截图，默认为 true。如果设置为 false，页面切换时将不会生成截图，可能会降低性能。
+super.barrierDismissible: PageRoute 的 barrierDismissible 参数，一个布尔值，表示是否可以通过点击背景来关闭当前页面。如果为 true，则点击背景会关闭页面；如果为 false，则不会，默认为 false。

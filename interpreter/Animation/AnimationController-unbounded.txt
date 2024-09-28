@@ -1,0 +1,6 @@
+double value: 动画的初始值，默认为 0.0。这是一个可选参数，如果未提供，则默认初始值为 0.0。
+Duration? duration: 正向动画的持续时间（从当前值到目标值）。这是一个可选参数，用于指定正向动画完成一次循环的时间。
+Duration? reverseDuration: 反向动画的持续时间（从目标值返回到当前值）。这也是一个可选参数，用于指定反向动画完成一次循环的时间。
+String? debugLabel: 用于调试的标签，可选参数，用于标识此动画控制器。
+required TickerProvider vsync: 提供 Ticker 对象的对象，通常是 State 对象，用于驱动动画。这是一个必需的参数。
+AnimationBehavior animationBehavior: 动画行为，指定动画如何处理其范围。默认为 AnimationBehavior.preserve。

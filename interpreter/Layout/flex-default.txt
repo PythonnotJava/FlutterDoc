@@ -1,0 +1,10 @@
+super.key: 这是继承自父类的key属性，用于在Widget树中唯一标识Flex。
+required this.direction: 这是一个必需的参数，用于指定Flex的主轴方向。可以设置为Axis.horizontal（水平方向）或Axis.vertical（垂直方向）。
+this.mainAxisAlignment: 这是一个可选参数，用于控制子组件在主轴方向上的对齐方式。默认为MainAxisAlignment.start，表示子组件在主轴方向上靠近Flex的起始端。其他选项包括MainAxisAlignment.end、MainAxisAlignment.center、MainAxisAlignment.spaceBetween、MainAxisAlignment.spaceEvenly和MainAxisAlignment.spaceAround。
+this.mainAxisSize: 这是一个可选参数，用于控制Flex在主轴方向上的大小。默认为MainAxisSize.max，表示Flex在主轴方向上占据尽可能多的空间，如果子组件不足以填充空间，Flex会扩展到最大大小。MainAxisSize.min表示Flex在主轴方向上只会占用子组件所需的最小空间。
+this.crossAxisAlignment: 这是一个可选参数，用于控制子组件在交叉轴方向上的对齐方式。默认为CrossAxisAlignment.center，表示子组件在交叉轴方向上居中对齐。其他选项包括CrossAxisAlignment.start、CrossAxisAlignment.end、CrossAxisAlignment.stretch。
+this.textDirection: 这是一个可选参数，用于指定文本方向，影响子组件的排列方向。
+this.verticalDirection: 这是一个可选参数，用于控制子组件在交叉轴方向上的顺序。默认为VerticalDirection.down，表示从上到下排列。其他选项为VerticalDirection.up，表示从下到上排列。
+this.textBaseline: 这是一个可选参数，用于指定基线对齐方式。在Flex中，这个属性没有默认值，因为它是与文本相关的，在普通情况下不需要显式设置。
+this.clipBehavior: 这是一个可选参数，用于控制子组件在Flex范围外的裁剪行为。默认为Clip.none，表示不进行裁剪。其他选项为Clip.hardEdge和Clip.antiAlias。
+super.children: 这是继承自父类的children属性，用于传递Flex的子组件列表。

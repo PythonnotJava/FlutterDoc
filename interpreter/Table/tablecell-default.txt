@@ -1,0 +1,3 @@
+Key? key：小部件的唯一标识符，可以用于查找和操作小部件。
+TableCellVerticalAlignment? verticalAlignment：用于控制单元格中内容的垂直对齐方式。可以设置为TableCellVerticalAlignment.top（顶部对齐）、TableCellVerticalAlignment.middle（居中对齐）或TableCellVerticalAlignment.bottom（底部对齐）。默认值是null，表示使用TableRow中的defaultVerticalAlignment属性来控制对齐方式。
+Widget child（必需）：单元格中显示的内容，可以是一个文本、图像或其他自定义的小部件。

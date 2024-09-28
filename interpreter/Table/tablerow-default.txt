@@ -1,0 +1,3 @@
+Key? key：小部件的唯一标识符，可以用于查找和操作小部件。
+Decoration? decoration：用于为表格行添加装饰效果的样式。Decoration是Flutter中的一个抽象类，用于定义装饰样式，例如背景色、边框、阴影等。通过decoration参数，你可以为表格行添加装饰效果，以便强调或突出显示某些行。默认值是null，表示没有装饰效果。
+List<Widget> children：行中的子小部件列表，通常为一组TableCell小部件。每个TableCell代表一列数据。默认值是一个空的列表<Widget>[]。

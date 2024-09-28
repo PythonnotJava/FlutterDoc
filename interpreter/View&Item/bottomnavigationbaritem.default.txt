@@ -1,0 +1,5 @@
+required this.icon: 必需参数，表示标签项的图标。它通常是一个Icon widget。
+this.label: 标签项的文本标签，可以选择性地提供。通常是一个Text widget。
+Widget? activeIcon: 选中标签项时显示的图标。可以选择性地提供，如果未提供，则使用icon参数中的图标。
+this.backgroundColor: 标签项的背景颜色，可以选择性地提供。
+this.tooltip: 标签项的工具提示，当用户长按标签项时显示的文本。可以选择性地提供。

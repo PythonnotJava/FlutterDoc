@@ -1,0 +1,8 @@
+key：一个可选的参数，用于在小部件树中唯一标识 FlexibleSpaceBar。
+title：一个可选的参数，用于在空间栏中显示的标题文本。通常是一个 Text 小部件。
+background：一个可选的参数，用于在空间栏背景中显示的小部件，通常是一个 Container 或 Image。
+centerTitle：一个可选的参数，用于指定是否将标题居中对齐。默认为 false。
+titlePadding：一个可选的参数，用于设置标题的内边距。
+collapseMode：一个可选的参数，指定了空间栏在滚动时的折叠行为。默认为 CollapseMode.parallax。
+stretchModes：一个可选的参数，指定了空间栏在拉伸时的行为。默认为 [StretchMode.zoomBackground]。
+expandedTitleScale：一个可选的参数，用于指定标题在空间栏展开时的缩放比例。默认为 1.5。

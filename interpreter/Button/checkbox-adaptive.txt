@@ -1,0 +1,19 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数，用于继承自父类的 key 属性。
+value：当前复选框的状态，是一个 bool 值，为 true 表示选中状态，为 false 表示未选中状态。这是一个必需参数。
+tristate：是否启用三态复选框。默认为 false，表示复选框只有两种状态（选中和未选中）。如果设置为 true，则复选框还可以处于第三种状态（不确定）。这是一个可选参数。
+onChanged：当复选框状态发生改变时的回调函数，它接收一个 bool? 参数，表示复选框的最新状态。注意，这里使用 bool? 类型是因为当 tristate 设置为 true 时，复选框可以处于不确定状态，此时 value 可以为 null。这是一个必需参数。
+mouseCursor：指针悬停在控件上时的鼠标光标。默认为 SystemMouseCursors.click。这是一个可选参数。
+activeColor：选中状态时的颜色。默认为 ThemeData.toggleableActiveColor，通常是主题的主色调。这是一个可选参数。
+fillColor：复选框的填充颜色。如果没有指定，则使用 activeColor 的50%透明度。这是一个可选参数。
+checkColor：复选框中勾选图标的颜色。如果没有指定，则使用 ThemeData.checkboxThemeData.fillColor。这是一个可选参数。
+focusColor：控件获取焦点时的颜色。默认为 ThemeData.focusColor。这是一个可选参数。
+hoverColor：鼠标悬停在控件上时的颜色。默认为 ThemeData.hoverColor。这是一个可选参数。
+overlayColor：覆盖在控件上的颜色。默认为 null，表示没有覆盖颜色。这是一个可选参数。
+splashRadius：水波纹的半径。默认为 null，表示使用默认值。这是一个可选参数。
+materialTapTargetSize：控件的最小大小。默认为 MaterialTapTargetSize.padded。这是一个可选参数。
+visualDensity：用于控制复选框的布局密度。这是一个可选参数。
+focusNode：控制控件是否具有焦点。这是一个可选参数。
+autofocus：是否自动获取焦点。默认为 false。这是一个可选参数。
+shape：复选框的形状。如果没有指定，则使用 BoxShape.circle。这是一个可选参数。
+side：复选框的边框。如果没有指定，则不显示边框。这是一个可选参数。
+isError：是否将复选框渲染为错误状态。默认为 false。这是一个可选参数。

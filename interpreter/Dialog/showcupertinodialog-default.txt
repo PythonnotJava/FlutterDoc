@@ -1,0 +1,8 @@
+BuildContext context（必需）：对话框的上下文。通常，你可以直接使用当前widget的BuildContext。
+WidgetBuilder builder（必需）：一个回调函数，它接收一个BuildContext参数，并返回要显示的对话框Widget。通常，你可以在这里创建自定义的Cupertino风格对话框内容。
+String? barrierLabel：用于辅助技术的文字描述，当对话框出现时，这段文字可以帮助屏幕阅读器等辅助技术标识对话框的用途。
+bool useRootNavigator：一个布尔值，指定是否使用根导航器来显示对话框。如果设置为true，则会使用根导航器来显示对话框，否则使用当前上下文中的导航器。默认值为true。
+bool barrierDismissible：一个布尔值，指定点击对话框外部是否可关闭对话框。如果设置为true，则点击对话框外部区域将关闭对话框；如果设置为false，则用户必须通过对话框内部的按钮或其他手段来关闭对话框。默认值为true。
+RouteSettings? routeSettings：对话框的路由设置，可以用于传递一些路由相关的信息。
+Color? barrierColor：遮罩层的颜色。遮罩层是对话框背后的半透明层，用于防止用户与后面的内容进行交互。这里可以指定遮罩层的颜色，默认为透明。
+Offset? anchorPoint ：对话框的锚点，这是一个相对于屏幕的偏移量，用于定位对话框的位置

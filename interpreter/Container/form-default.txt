@@ -1,0 +1,5 @@
+key：Form的唯一标识符，用于区分其他控件。
+child：Form的子控件，用于包含表单的其他组件，例如输入字段（TextFormField、TextField等）。
+onWillPop：一个回调函数，当用户尝试通过返回按钮或返回手势来关闭表单时，会调用该函数。
+onChanged：一个回调函数，在表单字段的值发生变化时被调用。
+autovalidateMode：指定自动验证模式，控制是否自动验证表单字段。

@@ -1,0 +1,14 @@
+super.key：继承自父类的键，用于控制小部件的标识。
+scrollDirection：页面滚动的方向，默认为水平方向 (Axis.horizontal)。也可以设置为垂直方向 (Axis.vertical)。
+reverse：布尔值，决定页面是否按相反顺序显示，默认为 false。如果设置为 true，则最后一个页面将首先显示。
+controller：可选的PageController对象，用于控制页面的切换和滚动。
+physics：控制滚动行为的滚动物理特性，例如滚动到边界时的反弹效果等。
+pageSnapping：布尔值，指定页面是否在滚动停止时对齐到页面的边界，默认为 true。
+onPageChanged：页面切换完成时的回调函数，接收当前页面的索引作为参数。
+children：页面的小部件列表，用于显示多个页面。
+dragStartBehavior：指定拖动行为的开始方式，默认为 DragStartBehavior.start。
+allowImplicitScrolling：布尔值，是否允许通过隐式手势滚动页面，默认为 false。
+restorationId：用于恢复页面视图的标识。
+clipBehavior：用于控制小部件剪裁行为的枚举值，默认为 Clip.hardEdge。
+scrollBehavior：定义滚动行为的滚动行为对象。
+padEnds：布尔值，指定是否在第一个和最后一个页面的前后添加额外的填充，默认为 true。

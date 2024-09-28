@@ -1,0 +1,25 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数。
+value：当前开关的状态，是一个 bool 值，为 true 表示开启状态，为 false 表示关闭状态。
+onChanged：当开关状态发生改变时的回调函数，它接收一个 bool 参数，表示开关的最新状态。这是一个必需参数。
+activeColor：开启状态时的颜色。默认为 ThemeData.toggleableActiveColor，通常是主题的主色调。
+activeTrackColor：开启状态时轨道的颜色。如果没有指定，则使用 activeColor。
+inactiveThumbColor：关闭状态时滑块的颜色。如果没有指定，则使用 trackColor。
+inactiveTrackColor：关闭状态时轨道的颜色。如果没有指定，则使用 trackColor 的50%透明度。
+activeThumbImage：开启状态时滑块的图片。
+onActiveThumbImageError：当 activeThumbImage 加载失败时的回调函数。
+inactiveThumbImage：关闭状态时滑块的图片。
+onInactiveThumbImageError：当 inactiveThumbImage 加载失败时的回调函数。
+thumbColor：滑块的颜色。如果没有指定，则使用 activeColor 或 inactiveThumbColor，取决于当前的状态。
+trackColor：轨道的颜色。如果没有指定，则使用 ThemeData.unselectedWidgetColor。
+trackOutlineColor：轨道的边框颜色。默认为透明。
+thumbIcon：滑块上显示的图标。
+materialTapTargetSize：控件的最小大小。默认为 MaterialTapTargetSize.padded。
+dragStartBehavior：确定开始拖动时使用的行为。默认为 DragStartBehavior.start。
+mouseCursor：指针悬停在控件上时的鼠标光标。默认为 SystemMouseCursors.click。
+focusColor：控件获取焦点时的颜色。默认为 ThemeData.focusColor。
+hoverColor：鼠标悬停在控件上时的颜色。默认为 ThemeData.hoverColor。
+overlayColor：覆盖在控件上的颜色。默认为 null，表示没有覆盖颜色。
+splashRadius：水波纹的半径。默认为 null，表示使用默认值。
+focusNode：控制控件是否具有焦点。
+onFocusChange：当控件的焦点状态发生改变时的回调函数。
+autofocus：是否自动获取焦点。默认为 false。

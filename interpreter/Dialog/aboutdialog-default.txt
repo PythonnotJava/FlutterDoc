@@ -1,0 +1,6 @@
+Key? key：小部件的唯一标识符，可以用于查找和操作小部件。这是一个可选参数。
+String? applicationName：应用程序的名称。这通常是应用程序的显示名称。
+String? applicationVersion：应用程序的版本号。你可以在这里指定应用程序的版本信息。
+Widget? applicationIcon：应用程序的图标。你可以在这里使用Image小部件或Icon小部件来显示应用程序的图标。
+String? applicationLegalese：应用程序的版权信息或法律声明。你可以在这里提供一些版权或使用条款等信息。
+List<Widget>? children：一个小部件列表，用于显示其他自定义的内容。如果你想在关于对话框中显示更多内容，可以使用这个参数。

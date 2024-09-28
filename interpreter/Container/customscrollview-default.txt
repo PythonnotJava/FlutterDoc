@@ -1,0 +1,16 @@
+super.key：小部件的唯一标识符。
+super.scrollDirection：指定滚动方向，可以是垂直方向 (Axis.vertical) 或水平方向 (Axis.horizontal)。
+super.reverse：确定滚动方向是否反向。
+super.controller：控制滚动位置和监听滚动事件的 ScrollController 对象。
+super.primary：一个布尔值，指示是否为主滚动视图，主滚动视图通常用于嵌套滚动。
+super.physics：指定滚动物理属性的滚动物理对象，例如滚动到边界时的回弹效果。
+super.scrollBehavior：滚动行为对象，用于自定义滚动交互。
+super.shrinkWrap：一个布尔值，指示是否根据子部件的大小来调整滚动视图的大小。
+super.center：用于指定滚动视图的对齐方式的 Key 对象。
+super.anchor：指定滚动视图在可滚动范围内的对齐位置，介于 0.0 和 1.0 之间。
+super.cacheExtent：一个可选的 double 值，用于确定缓存区域的大小。
+super.semanticChildCount：指定语义子部件的数量。
+super.dragStartBehavior：指定拖动开始行为的枚举值，可以是 DragStartBehavior.start（立即开始）或 DragStartBehavior.down（按下后开始）。
+super.keyboardDismissBehavior：指定键盘消失行为的枚举值，可以是 ScrollViewKeyboardDismissBehavior.manual（手动）或 ScrollViewKeyboardDismissBehavior.onDrag（拖动时）。
+super.restorationId：用于恢复滚动视图状态的 ID。
+super.clipBehavior：定义子部件裁剪行为的枚举值，可以是 Clip.none（不裁剪）或 Clip.hardEdge（硬边裁剪）。

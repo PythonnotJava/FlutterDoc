@@ -1,0 +1,6 @@
+super.key: 组件的唯一标识符，可选参数，继承自父类 StatelessWidget。
+this.backgroundColor: 可选参数，用于设置标题栏的背景颜色。
+this.leading: 可选参数，用于在标题栏的前面显示一个小部件，通常是一个图标。
+this.title: 可选参数，用于设置标题栏的主标题，通常是一个 Text 小部件。
+this.subtitle: 可选参数，用于设置标题栏的副标题，通常是一个 Text 小部件。
+this.trailing: 可选参数，用于在标题栏的后面显示一个小部件，通常是一个图标或其他装饰内容。

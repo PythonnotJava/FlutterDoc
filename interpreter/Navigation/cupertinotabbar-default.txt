@@ -1,0 +1,10 @@
+super.key: 用于唯一标识该组件的键（Key）。
+required this.items: 必需参数，表示底部导航栏的各个标签项。它是一个列表（List），每个元素都是一个BottomNavigationBarItem对象，包含了标签的图标和标题等信息。
+this.onTap: 点击底部导航栏标签时触发的回调函数。
+this.currentIndex: 当前选中的标签项的索引，默认为0，表示第一个标签项。
+this.backgroundColor: 底部导航栏的背景颜色。
+this.activeColor: 选中的标签项的颜色。
+this.inactiveColor: 未选中的标签项的颜色，默认为默认值_kDefaultTabBarInactiveColor。
+this.iconSize: 标签项中图标的大小。
+this.height: 底部导航栏的高度，默认为_kTabBarHeight。
+this.border: 底部导航栏的边框样式，默认为一个带有默认颜色和宽度的上边框。

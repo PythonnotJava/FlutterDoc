@@ -1,0 +1,8 @@
+super.key: 这是继承自父类的key属性，用于在Widget树中唯一标识Row。
+super.mainAxisAlignment: 这是继承自父类的mainAxisAlignment属性，用于控制子组件在主轴方向（水平方向）上的对齐方式。可以设置为MainAxisAlignment.start（默认值，子组件靠左对齐）、MainAxisAlignment.end（子组件靠右对齐）、MainAxisAlignment.center（子组件居中对齐）、MainAxisAlignment.spaceBetween（平均分布子组件，两端不留空隙）、MainAxisAlignment.spaceEvenly（平均分布子组件，包括两端）、MainAxisAlignment.spaceAround（平均分布子组件，包括两端，但子组件之间的间距是它们的一半）。
+super.mainAxisSize: 这是继承自父类的mainAxisSize属性，用于控制Row在主轴方向上的大小。默认为MainAxisSize.max，表示Row在主轴方向上占据尽可能多的空间，如果子组件不足以填充空间，Row会扩展到最大大小。MainAxisSize.min表示Row在主轴方向上只会占用子组件所需的最小空间。
+super.crossAxisAlignment: 这是继承自父类的crossAxisAlignment属性，用于控制子组件在交叉轴方向（垂直方向）上的对齐方式。可以设置为CrossAxisAlignment.start（子组件顶部对齐）、CrossAxisAlignment.end（子组件底部对齐）、CrossAxisAlignment.center（子组件居中对齐）、CrossAxisAlignment.stretch（子组件填充交叉轴方向上的空间）。
+super.textDirection: 这是继承自父类的textDirection属性，用于指定文本方向，影响子组件的排列方向。
+super.verticalDirection: 这是继承自父类的verticalDirection属性，用于控制子组件在交叉轴方向上的顺序。可以设置为VerticalDirection.down（默认值，从上到下排列）或VerticalDirection.up（从下到上排列）。
+super.textBaseline: 这是继承自父类的textBaseline属性，用于指定基线对齐方式。在Row中，这个属性没有默认值，因为它是与文本相关的，在普通情况下不需要显式设置。
+super.children: 这是继承自父类的children属性，用于传递Row的子组件列表。

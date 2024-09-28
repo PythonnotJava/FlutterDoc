@@ -1,0 +1,8 @@
+super.key: 这是继承自父类的key属性，用于在Widget树中唯一标识Flow。
+required this.delegate: 这是一个必需的参数，用于指定Flow的布局规则。delegate是一个FlowDelegate类型的对象，您需要创建一个继承自FlowDelegate的自定义类，并在其中实现布局规则。
+List<Widget> children = const <Widget>[]: 这是一个可选参数，用于传递Flow的子组件列表。默认为空列表。
+this.clipBehavior = Clip.hardEdge: 这是一个可选参数，用于控制子组件在Flow范围外的裁剪行为。默认为Clip.hardEdge，表示在Flow范围外剪裁子组件。其他选项为Clip.none和Clip.antiAlias。
+
+
+
+

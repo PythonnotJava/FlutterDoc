@@ -1,0 +1,6 @@
+key：继承自父类 Widget 的参数，用于在构建部件时标识 Divider。
+height：分隔线的高度，即垂直方向上的尺寸。类型为 double。
+thickness：分隔线的粗细度量，即水平方向上的宽度。类型为 double。
+indent：分隔线的起始缩进量，即分隔线距离容器左侧的距离。类型为 double。
+endIndent：分隔线的结束缩进量，即分隔线距离容器右侧的距离。类型为 double。
+color：分隔线的颜色。类型为 Color。

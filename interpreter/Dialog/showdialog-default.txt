@@ -1,0 +1,10 @@
+BuildContext context（必需）：对话框的上下文。通常，你可以直接使用当前widget的BuildContext。
+WidgetBuilder builder（必需）：一个回调函数，它接收一个BuildContext参数，并返回要显示的对话框Widget。通常，你可以在这里创建自定义的对话框内容。
+bool barrierDismissible：一个布尔值，指定点击对话框外部是否可关闭对话框。如果设置为true，则点击对话框外部区域将关闭对话框；如果设置为false，则用户必须通过对话框内部的按钮或其他手段来关闭对话框。默认值为true。
+Color? barrierColor：遮罩层的颜色。遮罩层是对话框背后的半透明层，用于防止用户与后面的内容进行交互。这里可以指定遮罩层的颜色，默认为Colors.black54，表示半透明黑色。
+String? barrierLabel：用于辅助技术的文字描述，当对话框出现时，这段文字可以帮助屏幕阅读器等辅助技术标识对话框的用途。
+bool useSafeArea：一个布尔值，指定是否在显示对话框时使用安全区域。安全区域是指屏幕上不受刘海屏、底部导航栏等影响的区域。默认值为true，表示使用安全区域。
+bool useRootNavigator：一个布尔值，指定是否使用根导航器来显示对话框。如果设置为true，则会使用根导航器来显示对话框，否则使用当前上下文中的导航器。默认值为true。
+RouteSettings? routeSettings：对话框的路由设置，可以用于传递一些路由相关的信息。
+Offset? anchorPoint：对话框的锚点，这是一个相对于屏幕的偏移量，用于定位对话框的位置。通常情况下，你不需要设置这个参数，除非你需要非常精确地控制对话框的位置。
+TraversalEdgeBehavior? traversalEdgeBehavior：遍历边缘行为。该参数指定对话框在沿着某些边缘滑动时的行为。默认情况下，对话框将在所有边缘上可滑动。你可以通过指定TraversalEdgeBehavior的值来改变这种行为。

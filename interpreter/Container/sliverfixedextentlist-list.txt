@@ -1,0 +1,6 @@
+Key? key：可选参数，用于在小部件树中唯一标识此小部件。
+@required List<Widget> children：必需参数，包含子项小部件的列表。
+@required double itemExtent：必需参数，指定每个子项的高度。
+bool addAutomaticKeepAlives：可选参数，是否在滚动时自动保留子项的状态。默认为 true。
+bool addRepaintBoundaries：可选参数，是否为子项添加重绘边界。默认为 true。
+bool addSemanticIndexes：可选参数，是否为子项添加语义索引。默认为 true。

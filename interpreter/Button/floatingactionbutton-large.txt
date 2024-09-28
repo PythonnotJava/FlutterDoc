@@ -1,0 +1,22 @@
+super.key: 继承自父类的可选键，用于识别小部件。
+this.child: 可选参数，显示在按钮上的小部件。
+this.tooltip: 可选参数，当用户长按按钮时显示的文本提示。
+this.foregroundColor: 可选参数，按钮的前景色，用于设置图标和标签的颜色。
+this.backgroundColor: 可选参数，按钮的背景色。
+this.focusColor: 可选参数，按钮获得焦点时的颜色。
+this.hoverColor: 可选参数，鼠标悬停在按钮上时的颜色。
+this.splashColor: 可选参数，按钮被按下时的水波纹颜色。
+this.heroTag: 可选参数，用于实现按钮之间的共享元素转换动画。
+this.elevation: 可选参数，按钮的高度。
+this.focusElevation: 可选参数，按钮获得焦点时的高度。
+this.hoverElevation: 可选参数，鼠标悬停在按钮上时的高度。
+this.highlightElevation: 可选参数，按钮被按下时的高度。
+this.disabledElevation: 可选参数，按钮禁用时的高度。
+required this.onPressed: 必需参数，按钮被点击时调用的回调函数。
+this.mouseCursor: 可选参数，鼠标指针的样式。
+this.shape: 可选参数，按钮的形状，如圆形或矩形。
+this.clipBehavior: 可选参数，按钮的裁剪行为。
+this.focusNode: 可选参数，按钮的焦点节点。
+this.autofocus: 可选参数，指定按钮是否自动获取焦点。
+this.materialTapTargetSize: 可选参数，按钮的目标大小。
+this.enableFeedback: 可选参数，指定按钮是否启用触觉反馈。

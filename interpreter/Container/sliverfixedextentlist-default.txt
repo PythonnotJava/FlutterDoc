@@ -1,0 +1,3 @@
+Key? key：可选参数，用于在小部件树中唯一标识此小部件。
+@required SliverChildDelegate delegate：必需参数，用于提供子项的委托对象，通常使用 SliverChildBuilderDelegate 或 SliverChildListDelegate。
+@required double itemExtent：必需参数，指定每个子项的高度。

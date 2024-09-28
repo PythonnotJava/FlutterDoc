@@ -1,0 +1,11 @@
+super.key：用于继承自父类的Widget的key。
+this.color：BottomAppBar的背景颜色。
+this.elevation：BottomAppBar的阴影高度。
+this.shape：BottomAppBar的形状，可以是一个圆角矩形或其他自定义形状。
+this.clipBehavior：BottomAppBar的剪切行为。
+this.notchMargin：如果使用FloatingActionButton，指定FAB与BottomAppBar之间的间距。
+this.child：BottomAppBar中显示的子widget。
+this.padding：BottomAppBar的内边距。
+this.surfaceTintColor：BottomAppBar的表面颜色，用于控制透明度。
+this.shadowColor：BottomAppBar的阴影颜色。
+this.height：BottomAppBar的高度。

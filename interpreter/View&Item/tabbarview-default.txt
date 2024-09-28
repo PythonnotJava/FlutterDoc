@@ -1,0 +1,7 @@
+super.key: 用于唯一标识该组件的键（Key）。
+required this.children: 必需参数，表示选项卡视图中的子视图列表。每个子视图都是一个Widget。
+this.controller: 控制TabBarView中的选项卡切换行为的控制器（TabController）。
+this.physics: 滚动行为的物理特性，可以控制滚动的效果，例如滑动阻尼和边界效果等。
+this.dragStartBehavior: 定义拖动的起始行为，默认为DragStartBehavior.start，表示拖动手势从开始位置开始。
+this.viewportFraction: 每个子视图在视口中的占比，默认为1.0，表示每个子视图都占据整个视口。
+this.clipBehavior: 子视图的剪裁行为，默认为Clip.hardEdge，表示硬边剪裁。

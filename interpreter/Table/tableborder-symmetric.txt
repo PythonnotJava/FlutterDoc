@@ -1,0 +1,2 @@
+BorderSide inside：表格内部单元格之间的边框样式。默认值是BorderSide.none，表示没有内部边框。
+BorderSide outside：表格外部边框样式。默认值是BorderSide.none，表示没有外部边框。

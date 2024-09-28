@@ -1,0 +1,7 @@
+BorderSide top：表格的顶部边框样式。默认值是BorderSide.none，表示没有边框。
+BorderSide right：表格的右侧边框样式。默认值是BorderSide.none，表示没有边框。
+BorderSide bottom：表格的底部边框样式。默认值是BorderSide.none，表示没有边框。
+BorderSide left：表格的左侧边框样式。默认值是BorderSide.none，表示没有边框。
+BorderSide horizontalInside：表格内部水平方向单元格之间的边框样式。默认值是BorderSide.none，表示没有内部水平边框。
+BorderSide verticalInside：表格内部垂直方向单元格之间的边框样式。默认值是BorderSide.none，表示没有内部垂直边框。
+BorderRadiusGeometry borderRadius：表格的边框圆角样式。默认值是BorderRadius.zero，表示没有圆角。

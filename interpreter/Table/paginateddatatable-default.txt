@@ -1,0 +1,26 @@
+super.key: 继承自父类 StatefulWidget 的 key 参数，用于标识 PaginatedDataTable。
+header: 一个小部件（Widget），显示在数据表格顶部的标题部分。
+actions: 一个小部件（Widget）的列表，显示在数据表格顶部右侧，可以放置自定义操作按钮等。
+columns: 一个 DataColumn 对象的列表，定义数据表格的列。
+sortColumnIndex: 一个可选的整数值，表示当前按照哪一列进行排序。
+sortAscending: 一个可选的布尔值，用于指示当前排序是否为升序。
+onSelectAll: 一个可选的回调函数，当用户点击全选复选框时将被调用。
+dataRowHeight: 已弃用。在 v3.7.0-5.0.pre 后已被废弃，请使用 dataRowMinHeight 和 dataRowMaxHeight。
+dataRowMinHeight: 一个可选的 double 值，用于指定数据行的最小高度。
+dataRowMaxHeight: 一个可选的 double 值，用于指定数据行的最大高度。
+headingRowHeight: 一个 double 值，用于指定表头行的高度，默认值为 56.0。
+horizontalMargin: 一个 double 值，用于指定表格左右边缘与屏幕边缘之间的空白区域宽度，默认值为 24.0。
+columnSpacing: 一个 double 值，用于指定列之间的间距，默认值为 56.0。
+showCheckboxColumn: 一个 bool 值，用于指示是否显示表格的复选框列，默认为 true。
+showFirstLastButtons: 一个 bool 值，用于指示是否显示第一页和最后一页的导航按钮，默认为 false。
+initialFirstRowIndex: 一个 int 值，用于指定初始时显示的第一行索引，默认值为 0。
+onPageChanged: 一个可选的回调函数，当用户更改页面时将被调用。
+rowsPerPage: 一个 int 值，用于指定每页显示的行数，默认为 defaultRowsPerPage。
+availableRowsPerPage: 一个 int 值的列表，表示可供选择的每页行数选项，默认为 [defaultRowsPerPage, defaultRowsPerPage * 2, defaultRowsPerPage * 5, defaultRowsPerPage * 10]。
+onRowsPerPageChanged: 一个可选的回调函数，当用户更改每页行数时将被调用。
+dragStartBehavior: 一个 DragStartBehavior 枚举值，指定拖动行为的起始位置，默认为 DragStartBehavior.start。
+arrowHeadColor: 一个可选的颜色值，用于指定排序箭头的颜色。
+source: 一个 DataTableSource 对象，提供表格的数据和行的配置。
+checkboxHorizontalMargin: 一个可选的 double 值，用于指定复选框水平边距。
+controller: 一个 DataTableController 对象，用于控制数据表格的状态和行为。
+primary: 一个可选的布尔值，用于指示是否为主滚动视图。

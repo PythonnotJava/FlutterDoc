@@ -1,0 +1,4 @@
+int initialIndex: 初始选中的选项卡索引，默认为0，表示选项卡视图中的第一个选项卡。
+Duration? animationDuration: 选项卡切换动画的持续时间。可以选择性地指定，如果不指定，则使用默认的动画持续时间。
+required this.length: 必需参数，表示选项卡的数量。
+required TickerProvider vsync: 提供给选项卡控制器的TickerProvider，用于管理动画的时钟。

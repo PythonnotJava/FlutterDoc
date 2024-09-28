@@ -1,0 +1,5 @@
+maxCrossAxisExtent：必需参数，指定子项在交叉轴上的最大范围。在垂直网格布局中，它定义了子项的宽度；在水平网格布局中，它定义了子项的高度。
+mainAxisSpacing：可选参数，用于指定主轴上相邻子项之间的间距。
+crossAxisSpacing：可选参数，用于指定交叉轴上相邻子项之间的间距。
+childAspectRatio：可选参数，用于指定子项的宽高比（宽度除以高度）。
+mainAxisExtent：可选参数，用于指定子项在主轴上的固定尺寸。如果设置了此参数，将忽略 maxCrossAxisExtent。

@@ -1,0 +1,9 @@
+key：Widget的唯一标识符，用于在树中唯一标识该组件。这是一个可选参数。
+textDirection：指定子部件相对于父容器的文本方向，可以是 TextDirection.ltr（从左到右）或 TextDirection.rtl（从右到左）。
+start：子部件相对于起始边缘的偏移量。根据给定的 textDirection，start 可以是左边（TextDirection.ltr）或右边（TextDirection.rtl）。
+top：子部件相对于顶部边缘的偏移量。
+end：子部件相对于结束边缘的偏移量。根据给定的 textDirection，end 可以是右边（TextDirection.ltr）或左边（TextDirection.rtl）。
+bottom：子部件相对于底部边缘的偏移量。
+width：子部件的宽度。如果指定了 width，则 start 和 end 属性将被忽略。
+height：子部件的高度。如果指定了 height，则 top 和 bottom 属性将被忽略。
+child：要定位的子部件，是一个必需参数。

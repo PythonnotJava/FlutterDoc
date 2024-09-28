@@ -1,0 +1,8 @@
+IndexedWidgetBuilder builder：必需参数，用于构建子项的回调函数。该函数接收一个索引作为参数，并返回对应索引位置上的子项。
+ChildIndexGetter? findChildIndexCallback：可选参数，用于查找子项的索引。如果提供了此回调函数，可以通过调用该函数来获取指定子项的索引。
+int? childCount：可选参数，指定子项的总数。如果提供了 childCount，则可以确定列表的长度。如果不提供 childCount，则列表将会无限滚动，直到达到列表的结尾。
+bool addAutomaticKeepAlives：可选参数，用于控制是否为子项添加自动保持活动状态的功能。默认为 true，表示会自动添加。
+bool addRepaintBoundaries：可选参数，用于控制是否为子项添加重绘边界。默认为 true，表示会自动添加。
+bool addSemanticIndexes：可选参数，用于控制是否为子项添加语义索引。默认为 true，表示会自动添加。
+IndexedSemanticsBuilder semanticIndexCallback：可选参数，用于构建语义索引的回调函数。如果提供了此回调函数，可以根据索引构建子项的语义索引。
+int semanticIndexOffset：可选参数，用于指定语义索引的偏移量。如果提供了 semanticIndexOffset，则可以将语义索引的起始值设置为指定的偏移量。

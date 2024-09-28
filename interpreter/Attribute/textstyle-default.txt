@@ -1,0 +1,26 @@
+this.inherit：是否继承父级文本样式，默认为true。
+this.color：文本颜色。
+this.backgroundColor：文本背景颜色。
+this.fontSize：字体大小。
+this.fontWeight：字体粗细。
+this.fontStyle：字体样式，如斜体。
+this.letterSpacing：字母间距。
+this.wordSpacing：单词间距。
+this.textBaseline：文本基线。
+this.height：行高。
+this.leadingDistribution：行高分布。
+this.locale：地区设置。
+this.foreground：前景装饰。
+this.background：背景装饰。
+this.shadows：阴影效果。
+this.fontFeatures：字体特征。
+this.fontVariations：字体变体。
+this.decoration：装饰样式。
+this.decorationColor：装饰颜色。
+this.decorationStyle：装饰风格，如虚线。
+this.decorationThickness：装饰线粗细。
+this.debugLabel：调试标签。
+String? fontFamily：字体系列。
+List<String>? fontFamilyFallback：字体系列备选项。
+String? package：字体所在的包。
+this.overflow：文本溢出时的处理方式。

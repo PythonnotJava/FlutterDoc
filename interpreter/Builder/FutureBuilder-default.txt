@@ -1,0 +1,4 @@
+super.key: 这是继承自父类的 key 参数，用于标识 FutureBuilder 的身份。
+required this.future: 这是一个必需的参数，表示一个 Future 对象，FutureBuilder 会监听这个 Future 对象的状态变化。
+this.initialData: 这是未来完成之前的初始数据，如果提供了初始数据，将会用它来构建用户界面。
+required this.builder: 这是一个必需的回调函数，用于构建基于 Future 返回的数据的 Widget 树。

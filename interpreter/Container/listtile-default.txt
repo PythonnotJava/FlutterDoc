@@ -1,0 +1,35 @@
+key：继承自父类 Widget 的参数，用于在构建部件时标识 ListTile。
+leading：在 ListTile 前面显示的小部件，通常是一个图标。类型为 Widget。
+title：ListTile 的主标题，通常是一个文本部件。类型为 Widget。
+subtitle：ListTile 的副标题，通常是一个文本部件。类型为 Widget。
+trailing：在 ListTile 后面显示的小部件，通常是一个图标。类型为 Widget。
+isThreeLine：一个布尔值，用于指定是否将 ListTile 的副标题显示为三行。默认为 false。
+dense：一个布尔值，用于指定 ListTile 是否使用较小的垂直尺寸。默认为 null，表示继承父级部件的值。
+visualDensity：控制 ListTile 的尺寸和填充。类型为 VisualDensity。
+shape：定义 ListTile 的边框形状。类型为 ShapeBorder。
+style：定义 ListTile 中文本的样式。类型为 ListTileStyle。
+selectedColor：当 ListTile 被选中时的背景颜色。类型为 Color。
+iconColor：ListTile 中图标的颜色。类型为 Color。
+textColor：ListTile 中文本的颜色。类型为 Color。
+titleTextStyle：用于自定义 title 文本的样式。类型为 TextStyle。
+subtitleTextStyle：用于自定义 subtitle 文本的样式。类型为 TextStyle。
+leadingAndTrailingTextStyle：用于自定义 leading 和 trailing 文本的样式。类型为 TextStyle。
+contentPadding：ListTile 内容的内边距。类型为 EdgeInsetsGeometry。
+enabled：一个布尔值，指定 ListTile 是否可点击。默认为 true。
+onTap：当 ListTile 被点击时触发的回调函数。类型为 VoidCallback。
+onLongPress：当 ListTile 被长按时触发的回调函数。类型为 VoidCallback。
+onFocusChange：当 ListTile 获得或失去焦点时触发的回调函数。类型为 ValueChanged<bool>。
+mouseCursor：指定鼠标指针在 ListTile 上的样式。类型为 MouseCursor。
+selected：一个布尔值，指定 ListTile 是否被选中。默认为 false。
+focusColor：当 ListTile 获得焦点时的背景颜色。类型为 Color。
+hoverColor：当鼠标悬停在 ListTile 上时的背景颜色。类型为 Color。
+splashColor：当用户点击 ListTile 时的水波纹颜色。类型为 Color。
+focusNode：指定用于管理 ListTile 的焦点状态的 FocusNode。
+autofocus：一个布尔值，指定是否自动获取焦点。默认为 false。
+tileColor：ListTile 的背景颜色。类型为 Color。
+selectedTileColor：当 ListTile 被选中时的背景颜色。类型为 Color。
+enableFeedback：一个布尔值，指定是否启用触觉反馈。默认为 true。
+horizontalTitleGap：title 和 subtitle 之间的水平间距。类型为 double。
+minVerticalPadding：ListTile 内容的最小垂直填充。类型为 double。
+minLeadingWidth：leading 小部件的最小宽度。类型为 double。
+titleAlignment：指定 title 的对齐方式。类型为 ListTileAlignment。

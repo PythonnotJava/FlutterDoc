@@ -1,0 +1,11 @@
+super.key: 用于指定widget的唯一标识符的键（Key）。通常用于在更新widget时进行识别和比较。
+super.onPressed: 必需的回调函数，当按钮被按下时会触发该回调。
+super.onLongPress: 长按按钮时触发的回调函数。
+super.onHover: 鼠标悬停在按钮上时触发的回调函数。
+super.onFocusChange: 获取或失去焦点时触发的回调函数。
+super.style: 按钮的样式，可以自定义按钮的外观。
+super.focusNode: 管理按钮的焦点状态的FocusNode。
+super.autofocus: 是否自动获取焦点。
+super.clipBehavior: 内容超出按钮边界时的剪裁行为。
+super.statesController: 控制按钮的状态，例如禁用按钮。
+super.child: 按钮的子widget，通常是按钮上显示的文本或图标。

@@ -1,0 +1,4 @@
+Key? key: 小部件的标识符，可选参数。
+required Listenable animation: 与此构建器关联的 Listenable 对象，通常是一个 Animation 或 AnimationController。
+required Widget Function(BuildContext, Widget?) builder: 一个回调函数，该函数接收两个参数：BuildContext 和 Widget?，并返回一个小部件树。BuildContext 提供了构建上下文，Widget? 是上一次构建的小部件树。该回调函数将根据 animation 的状态重新构建小部件树。
+Widget? child: 一个可选的小部件，作为静态部分，不会在 builder 回调中动态变化。通常用于包装一些不会在动画执行期间发生变化的部分。

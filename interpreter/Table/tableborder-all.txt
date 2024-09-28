@@ -1,0 +1,4 @@
+Color color：边框的颜色。默认值是const Color(0xFF000000)，表示边框颜色为黑色。
+double width：边框的宽度。默认值是1.0，表示边框宽度为1.0个逻辑像素。
+BorderStyle style：边框的样式。默认值是BorderStyle.solid，表示边框样式为实线。
+BorderRadius borderRadius：边框的圆角样式。默认值是BorderRadius.zero，表示没有圆角。

@@ -1,0 +1,5 @@
+image：必需的参数，用于指定图像的来源。它应该是一个ImageProvider对象，可以是AssetImage、NetworkImage等。
+key：可选参数，用于在小部件树中唯一标识ImageIcon小部件。
+size：可选参数，用于指定图像图标的大小。
+color：可选参数，用于指定图像图标的颜色。
+semanticLabel：可选参数，用于为图像图标提供语义描述，用于辅助功能。

@@ -1,0 +1,7 @@
+super.key: 可选参数，用于传递给Widget类的key参数。通常，你可以不指定这个参数，而是直接使用Hero的tag属性作为标识。
+tag: 必需参数，用于标识Hero动画的共享元素。在两个页面中，具有相同tag值的Hero将被认为是相同的共享元素，从而触发动画。
+createRectTween: 可选参数，用于定义共享元素在动画过程中的插值。这是一个RectTween类型的回调函数，用于指定共享元素的位置过渡方式，默认为线性过渡。
+flightShuttleBuilder: 可选参数，用于定义在Hero元素飞行时的过渡Widget的构建器。通常用于自定义Hero元素在两个页面之间飞行的外观。这是一个Widget Function(BuildContext, Animation<double>, HeroFlightDirection, BuildContext, BuildContext)类型的回调函数。
+placeholderBuilder: 可选参数，用于构建Hero动画中的占位Widget。当从列表页面过渡到详情页面时，占位Widget会在动画过程中替代原始Widget。这是一个Widget Function(BuildContext, Size, Widget)类型的回调函数。
+transitionOnUserGestures: 可选参数，布尔值，默认为false。当为true时，Hero动画将响应用户手势的触发，例如用户拖动屏幕。这可以在用户与屏幕交互时调整Hero动画。
+child: 必需参数，包含Hero动画的实际Widget。
