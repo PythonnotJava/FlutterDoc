@@ -1,0 +1,4 @@
+key: 是一个可选参数，通常用于 Flutter 的 widget 树中唯一标识一个组件。它有助于在树的变化中保持组件的状态。
+decoration: 这是一个必需的参数，类型为 BoxDecoration，用于定义 DecoratedBox 的外观，包括背景颜色、边框、阴影等。没有这个参数，DecoratedBox 无法正常工作。
+position: 这是一个可选参数，默认为 DecorationPosition.background。它用于指定装饰的位置。
+child: super.child 可选参数，表示被装饰的子组件。如果不提供子组件，DecoratedBox 不会有任何内容。

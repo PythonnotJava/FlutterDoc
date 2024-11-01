@@ -15,4 +15,4 @@ def batsh_like(path : str):
         b = cur[1].split('。')[0]
         print('|{} |         |{} |'.format(a, b))
 
-batsh_like('Builder/ValueListenableBuilder-default.txt')
+batsh_like('Source/icondata-default.txt')

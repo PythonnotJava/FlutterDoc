@@ -26,7 +26,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    return MaterialApp(
+    return MaterialApp(  // MaterialApp是UX
       // 其他代码
       // 这里面放置主页的实现类，我这叫做’Home‘
       home: Home(),
@@ -73,11 +73,38 @@ class MainFace extends State<Home> {
 11. [动画类](demo12.md)
 12. [路由跳转类](demo13.md)
 13. [主题类](demo14.md)
-14. [事件构建器](demo15.md)
+14. [管理器](demo15.md)
 
 ## Flutter中的状态
 * 无状态控件：无状态小部件是指其外观和行为仅由构造函数中的参数决定，并且在构建后不会发生变化。无状态控件一般继承于StatelessWidget基类
 * 带状态控件：有状态小部件是指其外观和行为不仅取决于构造函数中的参数，还取决于内部可变的状态。带状态控件一般继承于StatefulWidget基类
+
+## 带状态控件的四个重要生命周期
+1. initState
+调用时机：当 State 对象被插入到 Widget 树时（即 Widget 被创建时）。
+用途：
+初始化状态变量。
+创建控制器（如 TextEditingController、AnimationController）。
+开始异步操作（如网络请求）。
+注意：不能使用 BuildContext 访问树中的其他 Widget，因为此时 Widget 还未完全构建。
+2. didChangeDependencies
+调用时机：当 InheritedWidget 更新时被调用。
+用途：
+响应依赖的 InheritedWidget 变化，例如 Theme、MediaQuery 等。
+在这里访问新依赖项，并根据需要更新状态。
+注意：该方法可以多次调用，因此要确保更新逻辑合理。
+3. didUpdateWidget
+调用时机：当父 Widget 重新构建，并且新的 Widget 对象传递给该状态时被调用。
+用途：
+响应父 Widget 更新时调整当前状态。
+比较旧的和新的 Widget，决定是否需要更新状态。
+注意：需要保留旧 Widget 的引用，以便进行比较。
+4. dispose
+调用时机：当 State 对象从 Widget 树中移除时被调用。
+用途：
+清理资源，例如取消订阅、释放控制器、关闭数据库连接等。
+避免内存泄漏。
+注意：在调用父类的 dispose 方法之前，确保执行必要的清理。
 
 ## <font color='red'>约定</font> ：从此文章开始，我们规定以下内容
 * 用'...'代表类或者方法这里面有或者没有参数

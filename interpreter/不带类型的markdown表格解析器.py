@@ -11,4 +11,4 @@ def batsh_like(path : str):
         b = cur[1].split('。')[0]
         print('|{} |         |{} |'.format(a, b))
 
-batsh_like('Layout/flexible-default.txt')
+batsh_like('Manager/focusnode-default.txt')

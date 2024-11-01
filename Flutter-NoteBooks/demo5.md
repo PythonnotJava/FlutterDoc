@@ -9,6 +9,7 @@
 > * AnimatedIcon：用于显示动画图标。
 > * CircleAvatar：用于显示圆形的用户头像或图标。
 > * DecorationImage：用于在容器（如 Container）的背景或前景中显示图像。
+> * IconData：用于构建图标控件，比如Icon组件。每个IconData 对象都代表一个特定的图标，通常是从一个图标字体（如 Material Icons 或 Font Awesome）中提取的。
 
 ## Image类
 ### 默认构造函数
@@ -508,3 +509,27 @@ DecorationImage({
 | filterQuality      | FilterQuality         | 表示图像的滤镜质量                                                                       |
 | invertColors       | bool                  | 表示是否反转图像的颜色                                                                     |
 | isAntiAlias        | bool                  | 表示是否使用抗锯齿来渲染图像                                                                  |
+
+## IconData类
+### 默认构造函数
+```text
+IconData(
+    this.codePoint, {
+    this.fontFamily,
+    this.fontPackage,
+    this.matchTextDirection = false,
+    this.fontFamilyFallback,
+  })
+```
+
+### IconData(...)参数解析
+| 参数名称               | 使用类型         | 参数介绍                                                |
+|--------------------|--------------|-----------------------------------------------------|
+| codePoint          | int          | 表示图标在字体中的 Unicode 代码点                               |
+| fontFamily         | String       | 指定图标所使用的字体家族                                        |
+| fontPackage        | String       | 指定图标字体包的名称                                          |
+| matchTextDirection | bool         | 当设置为 true 时，图标会根据文本方向（左到右或右到左）来调整方向。这在支持国际化的应用中特别有用 |
+| fontFamilyFallback | List<String> | 允许你提供一个字体家族的后备列表                                    |
+
+
+

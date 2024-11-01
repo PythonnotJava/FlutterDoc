@@ -1,0 +1,5 @@
+codePoint: 这是必需的参数，表示图标在字体中的 Unicode 代码点。每个图标都有一个唯一的代码点，用于在字体中定位该图标。
+fontFamily: 这是一个可选参数，指定图标所使用的字体家族。通常情况下，如果你使用的是 Material Icons，fontFamily 会设置为 'MaterialIcons'。
+fontPackage: 这是一个可选参数，指定图标字体包的名称。当你的图标字体不是默认字体时，可以通过这个参数来指定字体包。
+matchTextDirection: 这是一个可选参数，默认为 false。当设置为 true 时，图标会根据文本方向（左到右或右到左）来调整方向。这在支持国际化的应用中特别有用。
+fontFamilyFallback: 这是一个可选参数，允许你提供一个字体家族的后备列表。当主字体家族中的某个字符缺失时，Flutter 会使用这些后备字体。

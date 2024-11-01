@@ -1,0 +1,7 @@
+debugLabel : 用于调试目的的标签，可以帮助开发者在调试时识别该 FocusNode 或组件的状态。通常用于开发阶段。
+onKey (已弃用) : 这是一个用于处理键盘事件的回调函数。由于已经弃用，推荐使用 onKeyEvent 替代。
+onKeyEvent : 一个回调函数，当键盘事件发生时触发，可以用于处理键盘输入、快捷键等。这个参数提供更好的事件处理能力。
+skipTraversal : 布尔值，表示在焦点遍历时是否跳过这个节点。如果设置为 true，则该节点不会在焦点遍历中被访问。
+canRequestFocus : 布尔值，指示该节点是否可以请求焦点。如果为 false，则该组件无法获得焦点。
+descendantsAreFocusable : 指示该节点的子孙组件是否可以获得焦点。如果为 true，则子孙组件可以被聚焦。
+descendantsAreTraversable : 布尔值，指示该节点的子孙组件在焦点遍历中是否可达。如果为 true，则在焦点遍历时可以到达子孙组件。

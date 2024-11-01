@@ -15,6 +15,7 @@
 > * Scrollbar：用于在可滚动组件周围显示滚动条的小部件。
 > * ExpansionPanelList：一个可展开的面板列表，它允许您创建一个包含可折叠内容的列表。每个可折叠的面板通常由一个标题和一个内容区域组成，用户可以点击标题来展开或折叠内容。
 > * ExpansionPanel：一个单独的可展开面板，是ExpansionPanelList的组成。
+> * DecoratedBox：用于绘制装饰（如背景颜色、边框和阴影）的组件。它通常用于给其他组件添加视觉效果，而不会改变其布局。
 
 ## Form类
 ### 默认构造函数
@@ -994,3 +995,23 @@ ExpansionPanel({
 | isExpanded        | bool     | 表示面板是否默认展开                                          |
 | canTapOnHeader    | bool     | 表示用户是否可以点击面板的标题来展开或折叠内容                             |
 | backgroundColor   | Color    | 表示面板的背景颜色                                           |
+
+## DecoratedBox类
+### 默认构造函数
+```text
+DecoratedBox({
+    super.key,
+    required this.decoration,
+    this.position = DecorationPosition.background,
+    super.child,
+  })
+```
+
+### DecoratedBox(...)参数解析
+| 参数名称       | 使用类型                | 参数介绍                                                        |
+|------------|---------------------|-------------------------------------------------------------|
+| key        | Key                 | 用于 Flutter 的 widget 树中唯一标识一个组件                              |
+| decoration | BoxDecoration       | 必需的参数，类型为 BoxDecoration，用于定义 DecoratedBox 的外观，包括背景颜色、边框、阴影等 |
+| position   | DecorationPosition  | 用于指定装饰的位置                                                   |
+| child      | Widget              | 表示被装饰的子组件                                                   |
+
