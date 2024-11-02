@@ -1,0 +1,3 @@
+key：用于标识 Widget 的可选参数。
+padding：一个 EdgeInsets 对象，用于定义内边距的大小和方向。
+child：要添加内边距的子 Widget。

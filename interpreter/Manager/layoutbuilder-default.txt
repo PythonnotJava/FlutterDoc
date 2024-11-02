@@ -1,0 +1,2 @@
+key: 一个可选的标识符，用于标记和唯一识别该小部件。key 是 Flutter 中所有小部件的通用参数，用于控制小部件的更新和优化。
+builder:: 一个必填的回调函数，类型为 Widget Function(BuildContext context, BoxConstraints constraints)。该函数提供了一个 BoxConstraints 对象，它包含当前 LayoutBuilder 所能使用的布局约束信息（例如最大宽度和高度）。可以根据这些约束动态地调整子小部件的布局。

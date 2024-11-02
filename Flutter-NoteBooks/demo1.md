@@ -74,6 +74,7 @@ class MainFace extends State<Home> {
 12. [路由跳转类](demo13.md)
 13. [主题类](demo14.md)
 14. [管理器](demo15.md)
+15. [工具类](demo16.md)
 
 ## Flutter中的状态
 * 无状态控件：无状态小部件是指其外观和行为仅由构造函数中的参数决定，并且在构建后不会发生变化。无状态控件一般继承于StatelessWidget基类

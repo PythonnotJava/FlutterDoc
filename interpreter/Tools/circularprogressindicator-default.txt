@@ -1,0 +1,11 @@
+key : 用于标识组件的唯一值，主要用于在组件树中查找和控制特定组件实例。
+value : 进度指示的值，取值范围是 [0.0, 1.0]，0.0 表示 0%，1.0 表示 100%。设置 value 会使进度条变成定量进度条（显示具体的进度），如果不设置该值，则进度条会作为不确定进度条无限旋转。
+backgroundColor : 指定进度条背景圆环的颜色，即未完成部分的颜色。默认背景色为 null，通常为透明。
+color : 前景色，表示已完成的进度部分的颜色（与 valueColor 不同时存在）。若设置了 valueColor，此参数可能会被覆盖。
+valueColor : 前景颜色的动画对象，可以设置为 AlwaysStoppedAnimation<Color> 来指定静态颜色，也可以通过动画效果让颜色渐变。
+strokeWidth : 指定圆环的宽度，默认为 4.0。值越大，圆环越粗。
+strokeAlign : 圆环的对齐方式。Flutter 提供了一些对齐常量，例如 strokeAlignCenter 表示圆环位于中心对齐，控制圆环如何相对于其边框进行对齐。
+semanticsLabel : 无障碍支持的标签，用于描述当前的进度条，通常用于屏幕阅读器读取内容，以帮助视障用户了解组件的作用。
+semanticsValue : 无障碍支持的数值描述，主要用于说明当前进度的数值，以百分比或具体进度形式呈现，供辅助技术使用。
+strokeCap : 指定圆环端部的样式。StrokeCap 枚举值包括 butt、round 和 square，默认是 StrokeCap.butt，可以用来调整圆环两端的显示效果，使进度条端部更加平滑或带圆角。
+

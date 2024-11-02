@@ -1,0 +1,9 @@
+key : 用于在 Flutter 的组件树中标识该组件，一般用于局部更新、优化等情况。
+value : 表示当前的进度值，范围是 0.0 到 1.0。null 表示不确定的进度（即动画的进度条会一直运动下去），否则会显示具体进度。
+backgroundColor : 进度条的背景颜色，即未填充的部分颜色。
+color : 进度条前景颜色，即已填充部分颜色。注意：此属性在 Flutter 3.7 中已被弃用，建议使用 valueColor。
+valueColor : 进度条的颜色动画，可以用于在进度条的前景颜色上设置动画效果。如果 color 和 valueColor 同时存在，valueColor 将覆盖 color 的值。
+minHeight : 进度条的最小高度，默认为系统默认的进度条高度（一般较细）。
+semanticsLabel : 用于屏幕阅读器的语义标签，帮助无障碍用户了解组件的用途或状态。
+semanticsValue : 用于屏幕阅读器的语义值，帮助无障碍用户了解组件的当前进度值。
+borderRadius : 控制进度条的圆角半径，默认为 BorderRadius.zero（即无圆角）。可以使用 BorderRadius.circular() 为进度条设置圆角效果。

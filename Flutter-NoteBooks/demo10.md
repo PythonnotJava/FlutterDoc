@@ -17,6 +17,11 @@
 > * Chip：用于显示简短信息的小组件，通常用于标签、标记或选择。
 > * Positioned：用于定位子部件的小部件之一。它通常用于 Stack 组件中，用于指定子部件的位置和尺寸。
 > * Flexible：用于布局的一个小部件，它允许子控件在主轴方向上占用可用空间的灵活性。
+> * ConstrainedBox：用于定义对子组件的约束条件。你可以设置最小宽度、最大宽度、最小高度和最大高度。
+> * UnconstrainedBox：用于移除其子组件的约束。这意味着，子组件可以超出父组件设定的大小限制，进而自定义其宽度和高度。
+> * AspectRatio：用于按照特定的宽高比来调整子组件的尺寸。它允许你在布局中保持某个组件的特定形状，无论其父组件的大小如何变化。
+> * Padding：用于在子 Widget 周围添加内边距的 Widget。
+
 
 ## Scaffold类
 ```text
@@ -756,3 +761,79 @@ Flexible({
 | flex    | int     | 决定该控件在主轴方向上所占的比例           |
 | fit     | FlexFit | 决定子控件如何适应可用空间              |
 | child   | Widget  | 必需参数，指定要在 Flexible 中显示的子控件 |
+
+## ConstrainedBox类
+### 默认构造函数
+```text
+ConstrainedBox({
+    super.key,
+    required this.constraints,
+    super.child,
+  })
+```
+
+### ConstrainedBox(...)参数解析
+| 参数名称        | 使用类型           | 参数介绍                                                                       |
+|-------------|----------------|----------------------------------------------------------------------------|
+| key         | Key            | 用于在树中唯一标识该组件                                                               |
+| constraints | BoxConstraints | 用于定义对子组件的约束条件。你可以设置最小宽度、最大宽度、最小高度和最大高度。通过传入 BoxConstraints 对象，可以灵活控制子组件的尺寸 |
+| child       | Widget         | ConstrainedBox的子组件                                                         |
+
+## UnconstrainedBox类
+### 默认构造函数
+```text
+UnconstrainedBox({
+    super.key,
+    this.child,
+    this.textDirection,
+    this.alignment = Alignment.center,
+    this.constrainedAxis,
+    this.clipBehavior = Clip.none,
+  })
+```
+
+### UnconstrainedBox(...)参数解析
+| 参数名称            | 使用类型              | 参数介绍                                                                     |
+|-----------------|-------------------|--------------------------------------------------------------------------|
+| key             | Key               | 用于标识组件的唯一值，主要用于在组件树中查找和控制特定组件实例                                          |
+| child           | Widget            | UnconstrainedBox的子组件，表示将要展示的内容。该组件可以自由扩展，不受父组件约束的影响                      |
+| textDirection   | TextDirection     | 用于指定文本方向                                                                 |
+| alignment       | AlignmentGeometry | 定义子组件在 UnconstrainedBox 内的对齐方式                                           |
+| constrainedAxis | Axis              | 指定限制的轴方向。这个参数可以帮助决定在水平或垂直方向上施加约束。如果不设置，UnconstrainedBox 将允许子组件在所有方向上自由扩展 |
+| clipBehavior    | Clip              | 定义如何处理超出 UnconstrainedBox 边界的内容                                          |
+
+## AspectRatio类
+### 默认构造函数
+```text
+AspectRatio({
+    super.key,
+    required this.aspectRatio,
+    super.child,
+  })
+```
+
+### AspectRatio(...)参数解析
+| 参数名称        | 使用类型   | 参数介绍                            |
+|-------------|--------|---------------------------------|
+| key         | Key    | 用于标识组件的唯一值，主要用于在组件树中查找和控制特定组件实例 |
+| aspectRatio | double | 指定宽高比。宽高比是一个浮点数，表示组件的宽度与高度之比    |
+| child       | Widget | 需要应用宽高比的子组件                     |
+
+## Padding类
+### 默认构造函数
+```text
+Padding({
+    super.key,
+    required this.padding,
+    super.child,
+  })
+```
+
+### Padding(...)参数解析
+| 参数名称      | 使用类型                | 参数介绍                           |
+|-----------|---------------------|--------------------------------|
+| key       | Key                 | 用于标识 Widget 的可选参数              |
+| padding   | EdgeInsetsGeometry  | 一个 EdgeInsets 对象，用于定义内边距的大小和方向 |
+| child     | Widget              | 要添加内边距的子 Widget                |
+
+> 注：EdgeInsetsGeometry是一个抽象类，我们一般都使用其子类EdgeInsets
