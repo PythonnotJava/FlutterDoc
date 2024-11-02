@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d59195-1deb-4896-bd9c-ef25f8db0aff" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Layout/aspectratio-default.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Layout/constrainedbox-default.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Layout/unconstrainedbox-default.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Tools/circularprogressindicator-adaptive.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Tools/circularprogressindicator-default.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Tools/linearprogressindicator-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Gesture/scrollable-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Layout/transform-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Layout/viewport-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Manager/srcollcontroller-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Tools/boxdecoration-default.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo1.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo10.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo10.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo11.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo11.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo15.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo15.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo7.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo7.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +118,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="不带类型的markdown表格解析器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FlutterDoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interpreter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.不带类型的markdown表格解析器" />
@@ -141,7 +165,8 @@
       <option name="presentableId" value="Default" />
       <updated>1730453638935</updated>
       <workItem from="1730453640164" duration="6290000" />
-      <workItem from="1730522051619" duration="7482000" />
+      <workItem from="1730522051619" duration="10686000" />
+      <workItem from="1730544681732" duration="11522000" />
     </task>
     <servers />
   </component>
@@ -149,6 +174,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FlutterDoc$markdown.coverage" NAME="不带类型的markdown表格解析器 覆盖结果" MODIFIED="1730527801313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interpreter" />
+    <SUITE FILE_PATH="coverage/FlutterDoc$markdown.coverage" NAME="不带类型的markdown表格解析器 覆盖结果" MODIFIED="1730559527739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interpreter" />
   </component>
 </project>

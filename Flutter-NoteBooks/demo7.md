@@ -16,6 +16,10 @@
 > * ExpansionPanelList：一个可展开的面板列表，它允许您创建一个包含可折叠内容的列表。每个可折叠的面板通常由一个标题和一个内容区域组成，用户可以点击标题来展开或折叠内容。
 > * ExpansionPanel：一个单独的可展开面板，是ExpansionPanelList的组成。
 > * DecoratedBox：用于绘制装饰（如背景颜色、边框和阴影）的组件。它通常用于给其他组件添加视觉效果，而不会改变其布局。
+> * ClipRRect：用于裁剪子部件的一个小部件，能够创建具有圆角矩形效果的裁剪。
+> * ClipOval：用于创建一个椭圆形的裁剪区域。
+> * ClipRect：用于裁剪子部件为矩形区域。
+> * ClipPath：用于根据自定义路径裁剪子部件。
 
 ## Form类
 ### 默认构造函数
@@ -1014,4 +1018,84 @@ DecoratedBox({
 | decoration | BoxDecoration       | 必需的参数，类型为 BoxDecoration，用于定义 DecoratedBox 的外观，包括背景颜色、边框、阴影等 |
 | position   | DecorationPosition  | 用于指定装饰的位置                                                   |
 | child      | Widget              | 表示被装饰的子组件                                                   |
+
+## ClipRRect类
+### 默认构造函数
+```text
+ClipRRect({
+    super.key,
+    this.borderRadius = BorderRadius.zero,
+    this.clipper,
+    this.clipBehavior = Clip.antiAlias,
+    super.child,
+  })
+```
+
+### ClipRRect(...)参数解析
+| 参数名称         | 使用类型                 | 参数介绍                           |
+|--------------|----------------------|--------------------------------|
+| key          | Key                  | 用于 Flutter 的 widget 树中唯一标识一个组件 |
+| borderRadius | BorderRadius         | 指定圆角的半径                        |
+| clipper      | CustomClipper<RRect> | 可选的自定义裁剪器                      |
+| clipBehavior | Clip                 | 裁剪行为                           |
+| child        | Widget               | 裁剪目标                           |
+
+## ClipOval类
+### 默认构造函数
+```text
+ClipOval({
+    super.key,
+    this.clipper,
+    this.clipBehavior = Clip.antiAlias,
+    super.child,
+  })
+```
+
+### ClipOval(...)参数解析
+| 参数名称         | 使用类型                | 参数介绍                           |
+|--------------|---------------------|--------------------------------|
+| key          | Key                 | 用于 Flutter 的 widget 树中唯一标识一个组件 |
+| clipper      | CustomClipper<Rect> | 允许你自定义裁剪区域。如果不提供，将默认使用椭圆形的裁剪行为 |
+| clipBehavior | Clip                | 裁剪行为，决定了如何裁剪子部件                |
+| child        | Widget              | 需要被裁剪的子部件                      |
+
+## ClipRect类
+### 默认构造函数
+```text
+ ClipRect({
+    super.key,
+    this.clipper,
+    this.clipBehavior = Clip.hardEdge,
+    super.child,
+  })
+```
+
+### ClipRect(...)参数解析
+| 参数名称         | 使用类型                | 参数介绍                           |
+|--------------|---------------------|--------------------------------|
+| key          | Key                 | 用于 Flutter 的 widget 树中唯一标识一个组件 |
+| clipper      | CustomClipper<Rect> | 允许你自定义裁剪区域                     |
+| clipBehavior | Clip                | 裁剪行为，决定了如何裁剪子部件                |
+| child        | Widget              | 需要被裁剪的子部件                      |
+
+## ClipPath
+### 默认构造函数
+```text
+ClipPath({
+    super.key,
+    this.clipper,
+    this.clipBehavior = Clip.antiAlias,
+    super.child,
+  })
+```
+
+### ClipPath(...)参数解析
+| 参数名称         | 使用类型                | 参数介绍                           |
+|--------------|---------------------|--------------------------------|
+| key          | Key                 | 用于 Flutter 的 widget 树中唯一标识一个组件 |
+| clipper      | CustomClipper<Rect> | 允许你自定义裁剪区域                     |
+| clipBehavior | Clip                | 裁剪行为，决定了如何裁剪子部件                |
+| child        | Widget              | 需要被裁剪的子部件                      |
+
+
 

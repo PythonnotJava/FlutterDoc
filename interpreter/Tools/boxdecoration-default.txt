@@ -1,0 +1,8 @@
+color: 用于设置背景颜色，接受一个 Color 对象，如 Colors.red。
+image:  设置背景图片，接受 DecorationImage 对象。可以用来定义图片的 fit、对齐方式、重复方式等。
+border: 定义边框，可以设置边框的颜色、宽度和样式。可以使用 Border.all 来设置所有边框，也可以单独指定每一边的边框样式。
+borderRadius: 用于设置圆角边框。只在 shape 为 BoxShape.rectangle 时生效。可以使用 BorderRadius.circular(radius) 来设置四个角为相同的圆角，或使用 BorderRadius.only 为每个角分别设置圆角。
+boxShadow: 设置阴影效果，接受 BoxShadow 对象的列表。每个 BoxShadow 可以设置阴影颜色、偏移量、模糊半径等。多个阴影可以叠加。
+gradient: 设置渐变效果，接受 Gradient 对象，例如 LinearGradient 或 RadialGradient。可用于定义线性渐变、径向渐变等，使背景有颜色过渡效果。
+backgroundBlendMode:  设置背景的混合模式。主要用于指定 color、gradient 和 image 的混合方式。例如 BlendMode.overlay 会叠加颜色和背景图片。
+shape: 用于设置组件的形状，默认值是 BoxShape.rectangle（矩形）。可以将 shape 设置为 BoxShape.circle，此时组件将变成圆形，且 borderRadius 无效。

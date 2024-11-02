@@ -21,7 +21,10 @@
 > * UnconstrainedBox：用于移除其子组件的约束。这意味着，子组件可以超出父组件设定的大小限制，进而自定义其宽度和高度。
 > * AspectRatio：用于按照特定的宽高比来调整子组件的尺寸。它允许你在布局中保持某个组件的特定形状，无论其父组件的大小如何变化。
 > * Padding：用于在子 Widget 周围添加内边距的 Widget。
-
+> * Transform：用于对其子组件应用各种变换，包括平移、旋转、缩放和倾斜。
+> * RotatedBox：在layout阶段，对子组件进行旋转变换，会影响在子组件的位置和大小。
+> * FittedBox：用于根据给定的大小调整其子部件的大小。它可以将子部件缩放到适应其父部件的框架，同时保持子部件的宽高比。
+> * Viewport：用于管理一个可滚动区域内的子组件。它负责根据当前的滚动位置和视口的大小来决定哪些子组件是可见的。
 
 ## Scaffold类
 ```text
@@ -837,3 +840,195 @@ Padding({
 | child     | Widget              | 要添加内边距的子 Widget                |
 
 > 注：EdgeInsetsGeometry是一个抽象类，我们一般都使用其子类EdgeInsets
+
+## Transform类
+### 默认构造函数
+```text
+Transform({
+    super.key,
+    required this.transform,
+    this.origin,
+    this.alignment,
+    this.transformHitTests = true,
+    this.filterQuality,
+    super.child,
+  })
+```
+
+### Transform(...)参数解析
+| 参数名称              | 使用类型              | 参数介绍                         |
+|-------------------|-------------------|------------------------------|
+| key               | Key               | 用于标识 Widget 的可选参数            |
+| transform         | Matrix4           | 用于定义组件的变换矩阵                  |
+| origin            | Offset            | 设置变换的原点，相对于组件左上角的偏移量         |
+| alignment         | AlignmentGeometry | 设置变换的对齐方式，控制变换相对于组件的哪个位置发生   |
+| transformHitTests | bool              | 控制是否对变换后的组件区域进行点击测试          |
+| filterQuality     | FilterQuality     | 设置图像在缩放或旋转时的渲染质量，通常用于提高图像清晰度 |
+| child             | Widget            | 要进行变换的子组件                    |
+
+### 旋转变换
+```text
+Transform.rotate({
+    super.key,
+    required double angle,
+    this.origin,
+    this.alignment = Alignment.center,
+    this.transformHitTests = true,
+    this.filterQuality,
+    super.child,
+  })
+```
+
+### Transform.rotate(...)参数解析
+| 参数名称              | 使用类型              | 参数介绍                         |
+|-------------------|-------------------|------------------------------|
+| key               | Key               | 用于标识 Widget 的可选参数            |
+| angle             | double            | 旋转角度                         |
+| origin            | Offset            | 设置变换的原点，相对于组件左上角的偏移量         |
+| alignment         | AlignmentGeometry | 设置变换的对齐方式，控制变换相对于组件的哪个位置发生   |
+| transformHitTests | bool              | 控制是否对变换后的组件区域进行点击测试          |
+| filterQuality     | FilterQuality     | 设置图像在缩放或旋转时的渲染质量，通常用于提高图像清晰度 |
+| child             | Widget            | 要进行变换的子组件                    |
+
+### 平移变换
+```text
+Transform.translate({
+    super.key,
+    required Offset offset,
+    this.transformHitTests = true,
+    this.filterQuality,
+    super.child,
+  })
+```
+
+### Transform.translate(...)参数解析
+| 参数名称                | 使用类型              | 参数介绍                                                             |
+|---------------------|-------------------|------------------------------------------------------------------|
+| key                 | Key               | 用于标识 Widget 的可选参数                                                |
+| offset              | Offset            | 平移的距离，例如，Offset(30.0, 20.0) 会将组件沿 x 轴平移 30.0 像素，沿 y 轴平移 20.0 像素  |
+| transformHitTests   | bool              | 控制是否对变换后的组件区域进行点击测试                                              |
+| filterQuality       | FilterQuality     | 设置图像在缩放或旋转时的渲染质量，通常用于提高图像清晰度                                     |
+| child               | Widget            | 要进行变换的子组件                                                        |
+
+### 缩放变换
+```text
+Transform.scale({
+    super.key,
+    double? scale,
+    double? scaleX,
+    double? scaleY,
+    this.origin,
+    this.alignment = Alignment.center,
+    this.transformHitTests = true,
+    this.filterQuality,
+    super.child,
+  })
+```
+
+### Transform.scale(...)参数解析
+| 参数名称               | 使用类型              | 参数介绍                         |
+|--------------------|-------------------|------------------------------|
+| key                | Key               | 用于标识 Widget 的可选参数            |
+| scale              | double            | 整体缩放倍数                       |
+| scaleX             | double            | x轴方向缩放倍数                     |
+| scaleY             | double            | y轴方向缩放倍数                     |
+| origin             | Offset            | 设置变换的原点，相对于组件左上角的偏移量         |
+| alignment          | AlignmentGeometry | 设置变换的对齐方式，控制变换相对于组件的哪个位置发生   |
+| transformHitTests  | bool              | 控制是否对变换后的组件区域进行点击测试          |
+| filterQuality      | FilterQuality     | 设置图像在缩放或旋转时的渲染质量，通常用于提高图像清晰度 |
+| child              | Widget            | 要进行变换的子组件                    |
+
+### 镜像变换
+```text
+Transform.flip({
+      super.key,
+      bool flipX = false,
+      bool flipY = false,
+      this.origin,
+      this.transformHitTests = true,
+      this.filterQuality,
+      super.child,
+  }) 
+```
+
+### Transform.flip(...)参数解析
+| 参数名称              | 使用类型           | 参数介绍                         |
+|-------------------|----------------|------------------------------|
+| key               | Key            | 用于标识 Widget 的可选参数            |
+| flipX             | bool           | 是否沿x轴翻转                      |
+| flipY             | bool           | 是否沿y轴翻转                      |
+| origin            | Offset         | 设置变换的原点，相对于组件左上角的偏移量         |
+| transformHitTests | bool           | 控制是否对变换后的组件区域进行点击测试          |
+| filterQuality     | FilterQuality  | 设置图像在缩放或旋转时的渲染质量，通常用于提高图像清晰度 |
+| child             | Widget         | 要进行变换的子组件                    |
+
+## RotatedBox类
+### 默认构造函数
+```text
+RotatedBox({
+    super.key,
+    required this.quarterTurns,
+    super.child,
+  })
+```
+
+### RotatedBox(...)参数解析
+| 参数名称             | 使用类型   | 参数介绍                     |
+|------------------|--------|--------------------------| 
+| key              | Key    | 用于标识 Widget 的可选参数        |
+| quarterTurns     | int    | 表示要旋转的 90 度的倍数           |
+| child            | Widget | 旋转目标                     |
+
+## FittedBox类
+### 默认构造函数
+```text
+FittedBox({
+    super.key,
+    this.fit = BoxFit.contain,
+    this.alignment = Alignment.center,
+    this.clipBehavior = Clip.none,
+    super.child,
+  })
+```
+
+### FittedBox(...)参数解析
+| 参数名称         | 使用类型      | 参数介绍                    |
+|--------------|-----------|-------------------------| 
+| key          | Key       | 用于标识 Widget 的可选参数       |
+| fit          | BoxFit    | 定义如何调整子部件的大小以适应父部件的大小   |
+| alignment    | Alignment | 用于控制子部件在框架中的对齐方式        |
+| clipBehavior | Clip      | 指定裁剪行为，决定如何处理超出边界的子部件部分 |
+| child        | Widget    | 要被调整大小的子部件              |
+
+## Viewport类
+### 默认构造函数
+```text
+Viewport({
+    super.key,
+    this.axisDirection = AxisDirection.down,
+    this.crossAxisDirection,
+    this.anchor = 0.0,
+    required this.offset,
+    this.center,
+    this.cacheExtent,
+    this.cacheExtentStyle = CacheExtentStyle.pixel,
+    this.clipBehavior = Clip.hardEdge,
+    List<Widget> slivers = const <Widget>[],
+  })
+```
+
+### Viewport(...)参数解析
+| 参数名称               | 使用类型             | 参数介绍                                   |
+|--------------------|------------------|----------------------------------------| 
+| key                | Key              | 用于标识 Widget 的可选参数                      |
+| axisDirection      | AxisDirection    | 指定视口的主滚动方向，可设置为向上、向左或向右。               |
+| crossAxisDirection | AxisDirection    | 指定与主轴垂直的方向，通常用于多轴布局                    |
+| anchor             | double           | 控制视口在滚动时的相对位置                          |
+| offset             | ViewportOffset   | 表示当前视口的滚动偏移量，决定视口的位置                   |
+| center             | Key              | 用于指定视口中心的Widget，通常用于实现更复杂的布局效果         |
+| cacheExtent        | double           | 指定视口可见区域之外的额外缓存空间，优化性能                 |
+| cacheExtentStyle   | CacheExtentStyle | 用于指定缓存范围的样式，支持像素或比例设置                  |
+| clipBehavior       | Clip             | 指定如何剪裁视口的内容，控制可视区域的边界行为                |
+| slivers            | List<Widget>     | 用于指定在视口内显示的Sliver Widget，通常用于实现复杂的滚动效果 |
+
+

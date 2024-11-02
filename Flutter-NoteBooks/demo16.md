@@ -1,8 +1,7 @@
 # 工具类
 > * LinearProgressIndicator：一个线性、条状的进度条。
 > * CircularProgressIndicator：一个圆形进度条。
-> * LayoutBuilder：一个响应父容器布局约束的构建器小部件，它允许根据父级的尺寸动态调整子小部件的布局。它特别适合用于自适应布局场景，确保 UI 在不同屏幕尺寸下都能合理显示。
-
+> * BoxDecoration：用于装饰Container等组件的类，可以让组件拥有背景颜色、渐变、圆角边框、阴影等效果。它提供了一些非常灵活的装饰属性，使你可以轻松地定制组件的外观。
 
 ## LinearProgressIndicator类
 ### 默认构造函数
@@ -91,18 +90,29 @@ CircularProgressIndicator.adaptive({
 | semanticsValue  | String           | 无障碍支持的数值描述，主要用于说明当前进度的数值，帮助辅助技术提供更好的用户体验            |
 | strokeCap       | StrokeCap        | 指定圆环端部的样式                                           |
 
-## LayoutBuilder类
+## BoxDecoration类
 ### 默认构造函数
 ```text
-LayoutBuilder({
-    super.key,
-    required super.builder,
-})
+BoxDecoration({
+    this.color,
+    this.image,
+    this.border,
+    this.borderRadius,
+    this.boxShadow,
+    this.gradient,
+    this.backgroundBlendMode,
+    this.shape = BoxShape.rectangle,
+  })
 ```
 
-### LayoutBuilder(...)参数解析
-| 参数名称      | 使用类型            | 参数介绍                                                                 |
-|-----------|-----------------|----------------------------------------------------------------------|
-| key       | Key             | 一个可选的标识符，用于标记和唯一识别该小部件                                               |
-| builder   | Widget Function |  回调函数，包含当前 LayoutBuilder 所能使用的布局约束信息（例如最大宽度和高度）。可以根据这些约束动态地调整子小部件的布局 |
-
+### CircularProgressIndicator.adaptive(...)参数解析
+| 参数名称                | 使用类型                 | 参数介绍                                |
+|---------------------|----------------------|-------------------------------------|
+| color               | Color                | 用于设置背景颜色，接受一个 Color 对象，如 Colors.red |
+| image               | DecorationImage      | 设置背景图片                              |
+| border              | BoxBorder            | 定义边框，可以设置边框的颜色、宽度和样式                |
+| borderRadius        | BorderRadiusGeometry | 用于设置圆角边框                            |
+| boxShadow           | List<BoxShadow>      | 设置阴影效果                              |
+| gradient            | Gradient             | 设置渐变效果                              |
+| backgroundBlendMode | BlendMode            | 设置背景的混合模式                           |
+| shape               | BoxShape             | 用于设置组件的形状                           |

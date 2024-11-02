@@ -1,7 +1,9 @@
 # 手势操作
 > GestureDetector：是一个用于处理用户手势操作的组件，它可以包裹其他组件，并监听用户的点击、滑动、缩放等手势事件。以下是一些 GestureDetector 常用的手势属性和事件处理
+> Scrollable：用于实现可滚动的内容。
 
 ## GestureDetector类
+### 默认构造函数
 ```text
 GestureDetector({
     super.key,
@@ -140,3 +142,44 @@ GestureDetector({
 | trackpadScrollCausesScale      | bool                    | 定义了是否使用触摸板滚动触发缩放                                   |
 | trackpadScrollToScaleFactor    | Offset                  | 触摸板滚动触发缩放的因子                                       |
 | supportedDevices               | Set<PointerDeviceKind>  | 一个可选的设备列表，定义了支持 GestureDetector 的设备                |
+
+## Scrollable类
+### 默认构造函数
+```text
+Scrollable({
+    super.key,
+    this.axisDirection = AxisDirection.down,
+    this.controller,
+    this.physics,
+    required this.viewportBuilder,
+    this.incrementCalculator,
+    this.excludeFromSemantics = false,
+    this.semanticChildCount,
+    this.dragStartBehavior = DragStartBehavior.start,
+    this.restorationId,
+    this.scrollBehavior,
+    this.clipBehavior = Clip.hardEdge,
+    this.hitTestBehavior = HitTestBehavior.opaque,
+  }) 
+```
+
+### Scrollable(...)参数解析
+| 参数名称                 | 使用类型              | 参数介绍                             |
+|----------------------|-------------------|----------------------------------|
+| key                  | Key               | 用于接收父类的 key，用于构建 Widget 树的唯一标识   |
+| axisDirection        | AxisDirection     | 指定滚动的方向                          |
+| controller           | ScrollController  | 用于控制滚动的位置和行为，可以在需要时手动控制滚动或监听滚动事件 |
+| physics              | ScrollPhysics     | 控制滚动的物理效果，例如弹性、吸附等               |
+| viewportBuilder      | Widget Function(  | 回调函数，返回一个构建视口内容的 Widget          |
+| incrementCalculator  | double Function   | 允许自定义滚动增量的计算方式，用于更复杂的滚动需求        |
+| excludeFromSemantics | bool              | 是否参与语义树的构建                       |
+| semanticChildCount   | int               | 指定可滚动区域中子组件的数量，用于辅助功能的描述         |
+| dragStartBehavior    | DragStartBehavior | 控制拖动手势的起始行为                      |
+| restorationId        | Stri              | 用于状态恢复的标识符，支持在应用恢复时保存和恢复滚动位置     |
+| scrollBehavior       | ScrollBehavior    | 用于自定义滚动行为，可以通过这个参数更改滚动的视觉效果和交互   |
+| clipBehavior         | Cl                | 指定如何剪裁内容，控制可视区域的边界行为             |
+| hitTestBehavior      | HitTestBehavior   | 指定组件的点击区域，控制是否响应触摸事件             |
+
+
+
+

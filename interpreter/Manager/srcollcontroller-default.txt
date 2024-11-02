@@ -1,0 +1,5 @@
+initialScrollOffset: 指定滚动控制器的初始滚动偏移量。在创建时可以设置这个值，以便在滚动视图初始化时达到预期位置。
+keepScrollOffset: 指定在控制器附加到 Scrollable 时是否保持滚动偏移量。如果设置为 false，则在附加时将滚动位置重置为初始值。
+debugLabel: 提供调试信息，帮助在调试输出中识别这个控制器。
+onAttach: 在控制器附加到 Scrollable 时调用的回调函数。这可以用于在控制器附加时执行特定逻辑。
+onDetach: 在控制器从 Scrollable 分离时调用的回调函数。这可以用于在控制器分离时执行清理工作或其他逻辑。

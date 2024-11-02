@@ -3,6 +3,8 @@
 > * StreamBuilder：用于处理持续数据流（Stream）的小部件。它依赖于 Stream 对象，并根据 Stream 的数据流动态构建 UI。Stream 表示的是持续产生数据的序列，通常用于实时数据更新、事件监听等场景。
 > * ValueListenableBuilder：用于监听和响应值发生变化的小部件，通常用于监听 ValueNotifier 或其他实现了 ValueListenable 接口的对象的变化。与 FutureBuilder 和 StreamBuilder 不同，它并不处理异步操作的结果或数据流的更新。
 > * FocusNode：用于管理焦点的类。
+> * LayoutBuilder：一个响应父容器布局约束的构建器小部件，它允许根据父级的尺寸动态调整子小部件的布局。它特别适合用于自适应布局场景，确保 UI 在不同屏幕尺寸下都能合理显示。
+> * ScrollController：用于控制滚动视图的一个类。它允许你在代码中管理滚动位置、监听滚动事件等。
 
 ## FutureBuilder类
 ### 默认构造函数
@@ -85,3 +87,41 @@ FocusNode({
 | canRequestFocus           | bool                                            | 指示该节点是否可以请求焦点                             |
 | descendantsAreFocusable   | bool                                            | 指示该节点的子孙组件是否可以获得焦点                        |
 | descendantsAreTraversable | bool                                            | 指示该节点的子孙组件在焦点遍历中是否可达                      |
+
+## LayoutBuilder类
+### 默认构造函数
+```text
+LayoutBuilder({
+    super.key,
+    required super.builder,
+})
+```
+
+### LayoutBuilder(...)参数解析
+| 参数名称      | 使用类型            | 参数介绍                                                                 |
+|-----------|-----------------|----------------------------------------------------------------------|
+| key       | Key             | 一个可选的标识符，用于标记和唯一识别该小部件                                               |
+| builder   | Widget Function |  回调函数，包含当前 LayoutBuilder 所能使用的布局约束信息（例如最大宽度和高度）。可以根据这些约束动态地调整子小部件的布局 |
+
+## ScrollController类
+### 默认构造函数
+```text
+ScrollController({
+    double initialScrollOffset = 0.0,
+    this.keepScrollOffset = true,
+    this.debugLabel,
+    this.onAttach,
+    this.onDetach,
+  }) 
+```
+
+### ScrollController(...)参数解析
+| 参数名称                | 使用类型           | 参数介绍                            |
+|---------------------|----------------|---------------------------------|
+| initialScrollOffset | double         | 指定滚动控制器的初始滚动偏移量                 |
+| keepScrollOffset    | bool           | 指定在控制器附加到 Scrollable 时是否保持滚动偏移量 |
+| debugLabel          | String         | 提供调试信息，帮助在调试输出中识别这个控制器          |
+| onAttach            | void Function  | 在控制器附加到 Scrollable 时调用的回调函数     |
+| onDetach            | void Function  | 在控制器从 Scrollable 分离时调用的回调函数     |
+
+

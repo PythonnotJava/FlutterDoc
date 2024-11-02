@@ -1,0 +1,13 @@
+key: 用于标识这个 Widget 的唯一性，通常在构建复杂的 Widget 树时使用，帮助 Flutter 识别和更新 Widget。
+axisDirection: 指定滚动的方向，默认为 AxisDirection.down（向下滚动）。可以设置为向上、向左或向右滚动。
+controller: 用于控制滚动的位置和行为，可以在需要时手动控制滚动或监听滚动事件。
+physics: 控制滚动的物理效果，例如弹性、吸附等。可以使用 AlwaysScrollableScrollPhysics、BouncingScrollPhysics 等选项。
+viewportBuilder: 这是一个必需的参数，返回一个构建视口内容的 Widget。这个函数会在滚动时被调用。
+incrementCalculator: 允许自定义滚动增量的计算方式，用于更复杂的滚动需求。
+excludeFromSemantics: 默认值为 false。如果为 true，则表示这个可滚动区域不参与语义树的构建，对辅助功能（如屏幕阅读器）不可见。
+semanticChildCount: 指定可滚动区域中子组件的数量，用于辅助功能的描述。
+dragStartBehavior: 控制拖动手势的起始行为。可以是 DragStartBehavior.start（拖动开始时即移动）或 DragStartBehavior.down（拖动开始时先确认触摸点）。
+restorationId: 用于状态恢复的标识符，支持在应用恢复时保存和恢复滚动位置。
+scrollBehavior: 用于自定义滚动行为，可以通过这个参数更改滚动的视觉效果和交互。
+clipBehavior: 默认值为 Clip.hardEdge。指定如何剪裁内容，控制可视区域的边界行为。
+hitTestBehavior: 默认值为 HitTestBehavior.opaque。指定组件的点击区域，控制是否响应触摸事件。

@@ -1,0 +1,10 @@
+key: 用于标识这个 Widget 的唯一性，帮助 Flutter 识别和管理 Widget 的状态。
+axisDirection: 默认值为 AxisDirection.down。指定视口的主滚动方向，可设置为向上、向左或向右。
+crossAxisDirection: 指定与主轴垂直的方向，通常用于多轴布局。
+anchor: 默认值为 0.0。指定视口的锚点位置，值在 0.0 到 1.0 之间，0.0 表示顶部，1.0 表示底部，控制视口在滚动时的相对位置。
+offset: 必需参数，表示当前视口的滚动偏移量，决定视口的位置。
+center: 可选参数，用于指定视口中心的 Widget，通常用于实现更复杂的布局效果。
+cacheExtent: 指定视口可见区域之外的额外缓存空间，优化性能。
+cacheExtentStyle: 默认值为 CacheExtentStyle.pixel。用于指定缓存范围的样式，支持像素或比例设置。
+clipBehavior: 默认值为 Clip.hardEdge。指定如何剪裁视口的内容，控制可视区域的边界行为。
+slivers: 默认值为空列表。用于指定在视口内显示的 Sliver Widget，通常用于实现复杂的滚动效果。
