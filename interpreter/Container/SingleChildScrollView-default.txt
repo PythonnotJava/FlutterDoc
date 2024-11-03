@@ -1,0 +1,13 @@
+super.key: 用于标识这个小部件，通常用于构建 widget 树时的性能优化。
+this.scrollDirection: 可选参数，指定滚动方向，类型为 Axis。可以是 Axis.vertical（垂直滚动，默认值）或 Axis.horizontal（水平滚动）。
+this.reverse: 可选参数，控制滚动的方向。如果设置为 true，内容将从底部开始滚动（适用于垂直滚动）。
+this.padding: 可选参数，设置子组件的内边距，可以使用 EdgeInsets 来定义。
+this.primary: 可选参数，指定该滚动视图是否是主滚动视图。当为 true 时，如果没有设置控制器，则会使用默认的 ScrollController。
+this.physics: 可选参数，定义滚动视图的物理效果（例如，滚动的弹性、吸引力等）。
+this.controller: 可选参数，指定 ScrollController 实例，用于控制和监听滚动事件。
+this.child: 必填参数，表示要包裹的单个子组件。
+this.dragStartBehavior: 可选参数，控制拖动开始行为。可以设置为 DragStartBehavior.start（从手指触摸的位置开始拖动）或 DragStartBehavior.down（从手指按下的位置开始拖动，默认值）。
+this.clipBehavior: 可选参数，指定子组件的裁剪行为。可以选择 Clip.hardEdge（强制裁剪），Clip.none（不裁剪），或 Clip.antiAlias（使用抗锯齿裁剪）。
+this.hitTestBehavior: 可选参数，控制子组件的点击测试行为。可以选择 HitTestBehavior.opaque（将整个区域视为可点击）或 HitTestBehavior.translucent（仅当子组件本身可点击时才视为可点击）。
+this.restorationId: 可选参数，指定状态恢复的标识符。用于保存和恢复滚动位置等状态。
+this.keyboardDismissBehavior: 可选参数，定义键盘在滚动时的行为，默认值为 ScrollViewKeyboardDismissBehavior.manual。可以选择 ScrollViewKeyboardDismissBehavior.onDrag（在拖动时自动关闭键盘）或 ScrollViewKeyboardDismissBehavior.manual（需要手动关闭键盘）。

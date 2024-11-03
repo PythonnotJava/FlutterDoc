@@ -1,0 +1,13 @@
+super.key: 用于标识这个小部件，通常用于构建 widget 树时的性能优化。
+required AnimatedItemBuilder itemBuilder: 必填参数，指定一个函数，用于构建列表项。它接受三个参数：BuildContext context、int index 和 Animation<double> animation，返回构建的列表项小部件。
+required AnimatedItemBuilder separatorBuilder: 必填参数，指定一个函数，用于构建分隔符。它的参数与 itemBuilder 相同，返回构建的分隔符小部件。
+required AnimatedItemBuilder super.removedSeparatorBuilder: 必填参数，指定一个函数，用于构建被移除的分隔符的动画效果。
+int initialItemCount: 设置列表的初始项数，默认为 0。
+super.scrollDirection: 指定滚动方向，类型为 Axis。可以是 Axis.vertical（垂直滚动，默认值）或 Axis.horizontal（水平滚动）。
+super.reverse: 控制滚动的方向。如果设置为 true，内容将从底部开始滚动（适用于垂直滚动）。
+super.controller: 指定 ScrollController 实例，用于控制和监听滚动事件。
+super.primary: 指定该滚动视图是否是主滚动视图。当为 true 时，如果没有设置控制器，则会使用默认的 ScrollController。
+super.physics: 定义滚动视图的物理效果（例如，滚动的弹性、吸引力等）。
+super.shrinkWrap: 控制列表的大小是否应根据子项的大小来缩放。设置为 true 时，列表将根据子项的大小进行收缩，默认为 false。
+super.padding: 设置列表的内边距，可以使用 EdgeInsets 来定义。
+super.clipBehavior: 指定子组件的裁剪行为。可以选择 Clip.hardEdge（强制裁剪），Clip.none（不裁剪），或 Clip.antiAlias（使用抗锯齿裁剪）。

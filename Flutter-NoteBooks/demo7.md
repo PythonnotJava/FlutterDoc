@@ -20,6 +20,8 @@
 > * ClipOval：用于创建一个椭圆形的裁剪区域。
 > * ClipRect：用于裁剪子部件为矩形区域。
 > * ClipPath：用于根据自定义路径裁剪子部件。
+> * SingleChildScrollView：用于在一个可滚动的区域中显示单个子组件。
+> * AnimatedList：用于创建具有动画效果的动态列表。
 
 ## Form类
 ### 默认构造函数
@@ -219,7 +221,7 @@ SliverFixedExtentList({
 ### SliverFixedExtentList(...)参数解析
 | 参数名称         | 使用类型                | 参数介绍                       |
 |--------------|---------------------|----------------------------|
-| key          | Key                 | 可选参数，用于在小部件树中唯一标识此小部件      |
+| key          | Key                 | 用于在小部件树中唯一标识此小部件      |
 | delegate     | SliverChildDelegate | 必需参数，用于提供子项的委托对            |
 | itemExtent   | double              | 必需参数，指定每个子项的高度             |
 
@@ -1096,6 +1098,112 @@ ClipPath({
 | clipper      | CustomClipper<Rect> | 允许你自定义裁剪区域                     |
 | clipBehavior | Clip                | 裁剪行为，决定了如何裁剪子部件                |
 | child        | Widget              | 需要被裁剪的子部件                      |
+
+## SingleChildScrollView类
+### 默认构造函数
+```text
+SingleChildScrollView({
+    super.key,
+    this.scrollDirection = Axis.vertical,
+    this.reverse = false,
+    this.padding,
+    this.primary,
+    this.physics,
+    this.controller,
+    this.child,
+    this.dragStartBehavior = DragStartBehavior.start,
+    this.clipBehavior = Clip.hardEdge,
+    this.hitTestBehavior = HitTestBehavior.opaque,
+    this.restorationId,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+  })
+```
+
+### SingleChildScrollView(...)参数解析
+| 参数名称                    | 使用类型                              | 参数介绍                                                      |
+|-------------------------|-----------------------------------|-----------------------------------------------------------|
+| key                     | Key                               | 用于 Flutter 的 widget 树中唯一标识一个组件                            |
+| scrollDirection         | Axis                              | 指定滚动方向，类型为 Axis                                           |
+| reverse                 | bool                              | 控制滚动的方向                                                   |
+| padding                 | EdgeInsetsGeometry                | 设置子组件的内边距，可以使用 EdgeInsets 来定义                             |
+| primary                 | bool                              | 指定该滚动视图是否是主滚动视图                                           |
+| physics                 | ScrollPhysics                     | 定义滚动视图的物理效果（例如，滚动的弹性、吸引力等）                                |
+| controller              | ScrollController                  | 指定 ScrollController 实例，用于控制和监听滚动事件                        |
+| child                   | Widget                            | 必填参数，表示要包裹的单个子组件                                          |
+| dragStartBehavior       | DragStartBehavior                 | 控制拖动开始行为                                                  |
+| clipBehavior            | Clip                              | 指定子组件的裁剪行为                                                |
+| hitTestBehavior         | HitTestBehavior                   | 控制子组件的点击测试行为                                              |
+| restorationId           | String                            | 指定状态恢复的标识符                                                |
+| keyboardDismissBehavior | ScrollViewKeyboardDismissBehavior | 定义键盘在滚动时的行为，默认值为 ScrollViewKeyboardDismissBehavior.manual |
+
+## AnimatedList类
+### 默认构造函数
+```text
+AnimatedList({
+    super.key,
+    required super.itemBuilder,
+    super.initialItemCount = 0,
+    super.scrollDirection = Axis.vertical,
+    super.reverse = false,
+    super.controller,
+    super.primary,
+    super.physics,
+    super.shrinkWrap = false,
+    super.padding,
+    super.clipBehavior = Clip.hardEdge,
+  })
+```
+
+### AnimatedList(...)参数解析
+| 参数名称             | 使用类型               | 参数介绍                               |
+|------------------|--------------------|------------------------------------|
+| key              | Key                | 用于标识这个小部件，通常用于构建 widget 树时的性能优化    |
+| itemBuilder      | Widget Function    | 必填参数，指定一个函数，该函数用于构建列表项。它接受三个参数     |
+| initialItemCount | int                | 设置列表的初始项数，默认为 0                    |
+| scrollDirection  | Axis               | 指定滚动方向，类型为 Axis                    |
+| reverse          | bool               | 控制滚动的方向                            |
+| controller       | ScrollController   | 指定 ScrollController 实例，用于控制和监听滚动事件 |
+| primary          | bool               | 指定该滚动视图是否是主滚动视图                    |
+| physics          | ScrollPhysics      | 定义滚动视图的物理效果（例如，滚动的弹性、吸引力等）         |
+| shrinkWrap       | bool               | 控制列表的大小是否应根据子项的大小来缩放               |
+| padding          | EdgeInsetsGeometry | 设置列表的内边距，可以使用 EdgeInsets 来定义       |
+| clipBehavior     | Clip               | 指定子组件的裁剪行为                         |
+
+### 用于创建具有动画效果的动态列表，支持在列表项之间添加分隔符
+```text
+AnimatedList.separated({
+    super.key,
+    required AnimatedItemBuilder itemBuilder,
+    required AnimatedItemBuilder separatorBuilder,
+    required AnimatedItemBuilder super.removedSeparatorBuilder,
+    int initialItemCount = 0,
+    super.scrollDirection = Axis.vertical,
+    super.reverse = false,
+    super.controller,
+    super.primary,
+    super.physics,
+    super.shrinkWrap = false,
+    super.padding,
+    super.clipBehavior = Clip.hardEdge,
+  })
+```
+
+### AnimatedList.separated(...)参数解析
+| 参数名称                    | 使用类型               | 参数介绍                               |
+|-------------------------|--------------------|------------------------------------|
+| key                     | Key                | 用于标识这个小部件，通常用于构建 widget 树时的性能优化    |
+| itemBuilder             | Widget Function    | 必填参数，指定一个函数，该函数用于构建列表项。它接受三个参数     |
+| separatorBuilder        | Widget Function    | 必填参数，指定一个函数，用于构建分隔符                |
+| removedSeparatorBuilder | Widget Function    | 必填参数，指定一个函数，用于构建被移除的分隔符的动画效果       |
+| initialItemCount        | int                | 设置列表的初始项数，默认为 0                    |
+| scrollDirection         | Axis               | 指定滚动方向，类型为 Axis                    |
+| reverse                 | bool               | 控制滚动的方向                            |
+| controller              | ScrollController   | 指定 ScrollController 实例，用于控制和监听滚动事件 |
+| primary                 | bool               | 指定该滚动视图是否是主滚动视图                    |
+| physics                 | ScrollPhysics      | 定义滚动视图的物理效果（例如，滚动的弹性、吸引力等）         |
+| shrinkWrap              | bool               | 控制列表的大小是否应根据子项的大小来缩放               |
+| padding                 | EdgeInsetsGeometry | 设置列表的内边距，可以使用 EdgeInsets 来定义       |
+|  clipBehavior           | Clip               |  指定子组件的裁剪行为                        |
 
 
 

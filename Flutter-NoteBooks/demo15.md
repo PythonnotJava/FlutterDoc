@@ -5,6 +5,8 @@
 > * FocusNode：用于管理焦点的类。
 > * LayoutBuilder：一个响应父容器布局约束的构建器小部件，它允许根据父级的尺寸动态调整子小部件的布局。它特别适合用于自适应布局场景，确保 UI 在不同屏幕尺寸下都能合理显示。
 > * ScrollController：用于控制滚动视图的一个类。它允许你在代码中管理滚动位置、监听滚动事件等。
+> * RawScrollbar：滚动条小部件，它允许你自定义滚动条的样式和行为。
+
 
 ## FutureBuilder类
 ### 默认构造函数
@@ -124,4 +126,59 @@ ScrollController({
 | onAttach            | void Function  | 在控制器附加到 Scrollable 时调用的回调函数     |
 | onDetach            | void Function  | 在控制器从 Scrollable 分离时调用的回调函数     |
 
+## RawScrollbar类
+### 默认构造函数
+```text
+RawScrollbar({
+    super.key,
+    required this.child,
+    this.controller,
+    this.thumbVisibility,
+    this.shape,
+    this.radius,
+    this.thickness,
+    this.thumbColor,
+    this.minThumbLength = _kMinThumbExtent,
+    this.minOverscrollLength,
+    this.trackVisibility,
+    this.trackRadius,
+    this.trackColor,
+    this.trackBorderColor,
+    this.fadeDuration = _kScrollbarFadeDuration,
+    this.timeToFade = _kScrollbarTimeToFade,
+    this.pressDuration = Duration.zero,
+    this.notificationPredicate = defaultScrollNotificationPredicate,
+    this.interactive,
+    this.scrollbarOrientation,
+    this.mainAxisMargin = 0.0,
+    this.crossAxisMargin = 0.0,
+    this.padding,
+  })
+```
 
+### RawScrollbar(...)参数解析
+| 参数名称                  | 使用类型                                          | 参数介绍                                             |
+|-----------------------|-----------------------------------------------|--------------------------------------------------|
+| key                   | Key                                           | 用于标识这个小部件，通常用于构建 widget 树时的性能优化                  |
+| child                 | Widget                                        | 必填参数，表示要包裹的子组件                                   |
+| controller            | ScrollController                              | ScrollController 实例，用于控制和监听滚动事件                  |
+| thumbVisibility       | bool                                          | 控制滑块的可见性，类型为 ScrollbarVisibility                 |
+| shape                 | OutlinedBorder                                | 用于定义滚动条的形状                                       |
+| radius                | Radius                                        | 定义滑块的圆角半径                                        |
+| thickness             | double                                        | 定义滑块的宽度                                          |
+| thumbColor            | Color                                         | 定义滑块的颜色                                          |
+| minThumbLength        | double                                        | 定义滑块的最小长度，默认为 _kMinThumbExtent                   |
+| minOverscrollLength   | double                                        | 定义滑块在超出可滚动区域时的最小长度                               |
+| trackVisibility       | bool                                          | 控制轨道的可见性                                         |
+| trackRadius           | Radius                                        | 定义轨道的圆角半径                                        |
+| trackColor            | Color                                         | 定义轨道的颜色                                          |
+| trackBorderColor      | Color                                         | 定义轨道边框的颜色                                        |
+| fadeDuration          | Duration                                      | 定义滑块淡入淡出的持续时间，默认为 _kScrollbarFadeDuration        |
+| timeToFade            | Duration                                      | 定义滑块消失的时间，默认为 _kScrollbarTimeToFade              |
+| pressDuration         | Duration                                      | 定义滑块被按下的持续时间，默认为 Duration.zero                   |
+| notificationPredicate | bool Function                                 | 定义通知的预测条件，默认为 defaultScrollNotificationPredicate |
+| interactive           | bool                                          | 定义滚动条是否支持交互                                      |
+| scrollbarOrientation  | ScrollbarOrientation     ScrollbarOrientation | 定义滚动条的方向（水平或垂直）                                  |
+| mainAxisMargin        | double                                        | 定义滑块在主轴方向上的边距，默认为 0.0                            |
+| crossAxisMargin       | double                                        | 定义滑块在交叉轴方向上的边距，默认为 0.0                           |
+| padding               | EdgeInsets                                    | 定义滑块的内边距                                         |

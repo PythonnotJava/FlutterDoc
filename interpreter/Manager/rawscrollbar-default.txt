@@ -1,0 +1,23 @@
+super.key: 用于标识这个小部件，通常用于构建 widget 树时的性能优化。
+required this.child: 必填参数，表示要包裹的子组件。
+this.controller: ScrollController 实例，用于控制和监听滚动事件。
+this.thumbVisibility: 控制滑块的可见性，类型为 ScrollbarVisibility。
+this.shape: 用于定义滚动条的形状。
+this.radius: 定义滑块的圆角半径。
+this.thickness: 定义滑块的宽度。
+this.thumbColor: 定义滑块的颜色。
+this.minThumbLength: 定义滑块的最小长度，默认为 _kMinThumbExtent。
+this.minOverscrollLength: 定义滑块在超出可滚动区域时的最小长度。
+this.trackVisibility: 控制轨道的可见性。
+this.trackRadius: 定义轨道的圆角半径。
+this.trackColor: 定义轨道的颜色。
+this.trackBorderColor: 定义轨道边框的颜色。
+this.fadeDuration: 定义滑块淡入淡出的持续时间，默认为 _kScrollbarFadeDuration。
+this.timeToFade: 定义滑块消失的时间，默认为 _kScrollbarTimeToFade。
+this.pressDuration: 定义滑块被按下的持续时间，默认为 Duration.zero。
+this.notificationPredicate: 定义通知的预测条件，默认为 defaultScrollNotificationPredicate。
+this.interactive: 定义滚动条是否支持交互。
+this.scrollbarOrientation: 定义滚动条的方向（水平或垂直）。
+this.mainAxisMargin: 定义滑块在主轴方向上的边距，默认为 0.0。
+this.crossAxisMargin: 定义滑块在交叉轴方向上的边距，默认为 0.0。
+this.padding: 定义滑块的内边距。

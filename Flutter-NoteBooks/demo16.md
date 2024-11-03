@@ -3,6 +3,7 @@
 > * CircularProgressIndicator：一个圆形进度条。
 > * BoxDecoration：用于装饰Container等组件的类，可以让组件拥有背景颜色、渐变、圆角边框、阴影等效果。它提供了一些非常灵活的装饰属性，使你可以轻松地定制组件的外观。
 
+
 ## LinearProgressIndicator类
 ### 默认构造函数
 ```text
@@ -116,3 +117,4 @@ BoxDecoration({
 | gradient            | Gradient             | 设置渐变效果                              |
 | backgroundBlendMode | BlendMode            | 设置背景的混合模式                           |
 | shape               | BoxShape             | 用于设置组件的形状                           |
+
