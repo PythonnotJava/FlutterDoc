@@ -22,6 +22,7 @@
 > * ClipPath：用于根据自定义路径裁剪子部件。
 > * SingleChildScrollView：用于在一个可滚动的区域中显示单个子组件。
 > * AnimatedList：用于创建具有动画效果的动态列表。
+> * NestedScrollView：一个支持嵌套滚动的组件，常用于实现页面中多个滚动视图之间的协调滚动，
 
 ## Form类
 ### 默认构造函数
@@ -219,11 +220,11 @@ SliverFixedExtentList({
 ```
 
 ### SliverFixedExtentList(...)参数解析
-| 参数名称         | 使用类型                | 参数介绍                       |
-|--------------|---------------------|----------------------------|
-| key          | Key                 | 用于在小部件树中唯一标识此小部件      |
-| delegate     | SliverChildDelegate | 必需参数，用于提供子项的委托对            |
-| itemExtent   | double              | 必需参数，指定每个子项的高度             |
+| 参数名称          | 使用类型                | 参数介绍                        |
+|---------------|---------------------|-----------------------------|
+| key           | Key                 | 用于在小部件树中唯一标识此小部件            |
+| delegate      | SliverChildDelegate | 必需参数，用于提供子项的委托对             |
+| itemExtent    | double              | 必需参数，指定每个子项的高度              |
 
 ### 使用构建器模式来构建子项
 ```text
@@ -1205,5 +1206,40 @@ AnimatedList.separated({
 | padding                 | EdgeInsetsGeometry | 设置列表的内边距，可以使用 EdgeInsets 来定义       |
 |  clipBehavior           | Clip               |  指定子组件的裁剪行为                        |
 
+## NestedScrollView类
+### 默认构造函数
+```text
+NestedScrollView({
+    super.key,
+    this.controller,
+    this.scrollDirection = Axis.vertical,
+    this.reverse = false,
+    this.physics,
+    required this.headerSliverBuilder,
+    required this.body,
+    this.dragStartBehavior = DragStartBehavior.start,
+    this.floatHeaderSlivers = false,
+    this.clipBehavior = Clip.hardEdge,
+    this.hitTestBehavior = HitTestBehavior.opaque,
+    this.restorationId,
+    this.scrollBehavior,
+  })
+```
 
+### NestedScrollView(...)参数解析
+| 参数名称                | 使用类型                  | 参数介绍                                                       |
+|---------------------|-----------------------|------------------------------------------------------------|
+| key                 | Key                   | 用于标识 NestedScrollView 的唯一标识符                               |
+| controller          | ScrollController      | 用于控制 NestedScrollView 的滚动行为                                |
+| scrollDirection     | Axis                  | 指定滚动的方向                                                    |
+| reverse             | bool                  | 控制滚动的反转方向                                                  |
+| physics             | ScrollPhysics         | 指定滚动的物理效果（如惯性、弹性效果等）                                       |
+| headerSliverBuilder | List<Widget> Function | 一个回调函数，用于构建“外层”滚动视图的内容，通常返回 Sliver 组件列表                    |
+| body                | Widget                | 定义内层滚动视图的内容                                                |
+| dragStartBehavior   | DragStartBehavior     | 指定拖动手势的起始行为                                                |
+| floatHeaderSlivers  | bool                  | 控制 SliverAppBar 等 headerSliverBuilder 中的 Sliver 是否在滚动时“浮动” |
+| clipBehavior        | Clip                  | 设置 NestedScrollView 的剪裁行为                                  |
+| hitTestBehavior     | HitTestBehavior       | 控制组件的命中测试行为                                                |
+| restorationId       | String                | 恢复 NestedScrollView 的状态的标识符                                |
+| scrollBehavior      | ScrollBehavior        | 定义滚动的行为                                                    |
 

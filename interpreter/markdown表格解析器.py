@@ -15,4 +15,4 @@ def batsh_like(path : str):
         b = cur[1].split('。')[0]
         print('|{} |         |{} |'.format(a, b))
 
-batsh_like('Container/animatedlist-separated.txt')
+batsh_like('Tools/inheritedprovider-default.txt')

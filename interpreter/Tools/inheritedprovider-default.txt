@@ -1,0 +1,10 @@
+key ：用于为 InheritedProvider 提供一个唯一标识符。它帮助 Flutter 框架高效地识别和重建 widget 树中的组件。通常在需要标识某个 widget 时使用。
+create ：一个回调函数，返回要提供给 widget 树的对象（T）。该函数用于在 InheritedProvider 被创建时生成数据。通常用于创建数据模型或需要共享的对象。
+update ：一个回调函数，接收当前的数据对象 T 和 value（之前的数据值），用于在 InheritedProvider 更新时提供更新逻辑。该回调返回更新后的数据对象。
+updateShouldNotify ：一个回调函数，接受一个 oldWidget 参数，返回一个布尔值（true 或 false），表示是否通知依赖该数据的 widget 进行重建。当数据变化时，如果返回 true，则通知更新；如果返回 false，则不更新。
+debugCheckInvalidValueType ：一个调试回调函数，用于检查提供给 InheritedProvider 的值类型是否有效。通常用于开发过程中帮助识别潜在的类型错误。
+startListening ：一个回调函数，用于指示 InheritedProvider 何时开始监听数据变化。通常与 ChangeNotifier 或其他可监听的数据源结合使用，监听并在数据变化时通知更新。
+dispose ：一个回调函数，用于在 InheritedProvider 不再需要时清理资源。通常在对象生命周期结束时调用，用于避免内存泄漏。
+builder ：一个回调函数，返回一个 Widget。它在 InheritedProvider 内部访问数据并将其传递给子树的 widget。使用 builder 可以解耦数据和 UI。
+lazy ：一个布尔值，默认值为 true。如果为 true，则 InheritedProvider 会延迟创建数据对象，直到第一次访问时才会创建。如果为 false，数据会在 InheritedProvider 创建时立即生成。
+child ：传递给 InheritedProvider 的子 widget，通常是依赖 InheritedProvider 提供的数据的组件。它是 InheritedProvider 的子树部分，所有子组件都可以访问到共享的数据。

@@ -6,7 +6,7 @@
 > * LayoutBuilder：一个响应父容器布局约束的构建器小部件，它允许根据父级的尺寸动态调整子小部件的布局。它特别适合用于自适应布局场景，确保 UI 在不同屏幕尺寸下都能合理显示。
 > * ScrollController：用于控制滚动视图的一个类。它允许你在代码中管理滚动位置、监听滚动事件等。
 > * RawScrollbar：滚动条小部件，它允许你自定义滚动条的样式和行为。
-
+> * PopScope：用于拦截页面的“返回”操作。
 
 ## FutureBuilder类
 ### 默认构造函数
@@ -182,3 +182,30 @@ RawScrollbar({
 | mainAxisMargin        | double                                        | 定义滑块在主轴方向上的边距，默认为 0.0                            |
 | crossAxisMargin       | double                                        | 定义滑块在交叉轴方向上的边距，默认为 0.0                           |
 | padding               | EdgeInsets                                    | 定义滑块的内边距                                         |
+
+## PopScope类
+### 默认构造函数
+```text
+PopScope({
+    super.key,
+    required this.child,
+    this.canPop = true,
+    this.onPopInvokedWithResult,
+    @Deprecated(
+      'Use onPopInvokedWithResult instead. '
+      'This feature was deprecated after v3.22.0-12.0.pre.',
+    )
+    this.onPopInvoked,
+  })
+```
+
+### PopScope(...)参数解析
+| 参数名称                   | 使用类型                   | 参数介绍                                  |
+|------------------------|------------------------|---------------------------------------|
+| key                    | Key                    | 用于标记和保持 Widget 的状态                    |
+| child                  | Widget                 | PopScope 的子组件，即页面的主要内容                |
+| canPop                 | bool                   | 控制是否允许页面返回操作                          |
+| onPopInvokedWithResult | Future<bool> Function  | 当用户触发页面返回时的异步回调，用于执行自定义逻辑，并决定页面是否允许关闭 |
+| onPopInvoked           | Future<bool> Function  | 已被弃用                                  |
+
+

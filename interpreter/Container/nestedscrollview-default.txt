@@ -1,0 +1,13 @@
+key : 用于标识 NestedScrollView 的唯一标识符
+controller : 用于控制 NestedScrollView 的滚动行为
+scrollDirection : 指定滚动的方向
+reverse : 控制滚动的反转方向
+physics : 指定滚动的物理效果（如惯性、弹性效果等）。
+headerSliverBuilder : 一个回调函数，用于构建“外层”滚动视图的内容，通常返回 Sliver 组件列表
+body : 定义内层滚动视图的内容
+dragStartBehavior : 指定拖动手势的起始行为
+floatHeaderSlivers : 控制 SliverAppBar 等 headerSliverBuilder 中的 Sliver 是否在滚动时“浮动”
+clipBehavior : 设置 NestedScrollView 的剪裁行为
+hitTestBehavior : 控制组件的命中测试行为
+restorationId : 恢复 NestedScrollView 的状态的标识符。允许在应用重启或状态恢复时保持滚动位置。
+scrollBehavior : 定义滚动的行为

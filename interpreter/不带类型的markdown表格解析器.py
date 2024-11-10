@@ -11,4 +11,4 @@ def batsh_like(path : str):
         b = cur[1].split('。')[0]
         print('|{} |         |{} |'.format(a, b))
 
-batsh_like('Manager/srcollcontroller-default.txt')
+batsh_like('Container/nestedscrollview-default.txt')

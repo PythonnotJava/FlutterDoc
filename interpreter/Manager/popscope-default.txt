@@ -1,0 +1,5 @@
+key : 用于标记和保持 Widget 的状态。
+child : PopScope 的子组件，即页面的主要内容。
+canPop : 控制是否允许页面返回操作。
+onPopInvokedWithResult : 当用户触发页面返回时的异步回调，用于执行自定义逻辑，并决定页面是否允许关闭。
+onPopInvoked : 已被弃用。
