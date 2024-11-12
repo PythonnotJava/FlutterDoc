@@ -4,11 +4,12 @@
 > * showGeneralDialog：用于显示通用对话框的方法。与showDialog和showCupertinoDialog相比，showGeneralDialog提供了更高度的自定义能力，可以用于构建更灵活和复杂的对话框。
 > * AboutDialog：用于显示关于应用程序的对话框。通常，关于对话框用于显示应用程序的版本号、版权信息、开发者信息等。
 > * SimpleDialog：用于显示简单的对话框。通常用于在一组选项中让用户选择其中一个选项。
-> *  AlertDialog：用于显示一个警示对话框。
+> * AlertDialog：用于显示一个警示对话框。
 > * SimpleDialogOption：通常用于在一组选项中让用户选择其中一个选项，并且它是SimpleDialog的子部件。
+> * Dialog：一个通用的对话框类，并不限定对话框的具体内容和结构。它仅提供一个基本的容器，使你可以完全自定义对话框的内容、布局和样式。
 
-## showDialog类
-### 默认构造函数
+## showDialog方法
+### 函数原型
 ```text
 Future<T?> showDialog<T>({
   required BuildContext context,
@@ -38,8 +39,8 @@ Future<T?> showDialog<T>({
 | anchorPoint            | Offset                | 对话框的锚点，这是一个相对于屏幕的偏移量，用于定位对话框的位置                |
 | traversalEdgeBehavior  | TraversalEdgeBehavior | 遍历边缘行为                                         |
 
-## showCupertinoDialog类
-### 默认构造函数
+## showCupertinoDialog方法
+### 函数原型
 ```text
 Future<T?> showCupertinoDialog<T>({
   required BuildContext context,
@@ -63,8 +64,8 @@ Future<T?> showCupertinoDialog<T>({
 | routeSettings      | RouteSettings     | 对话框的路由设置，可以用于传递一些路由相关的信息                        |
 | anchorPoint        | Offset            | 对话框的锚点，这是一个相对于屏幕的偏移量，用于定位对话框的位置                 |
 
-## showGeneralDialog类
-### 默认构造函数
+## showGeneralDialog方法
+### 函数原型
 ```text
 Future<T?> showGeneralDialog<T extends Object?>({
   required BuildContext context,
@@ -241,3 +242,59 @@ SimpleDialogOption({
 | onPressed | Function   | 点击选项时触发的回调函数           |
 | padding   | EdgeInsets | 选项的内边距                 |
 | child     | Widget     | 选项的内容                  |
+
+## Dialog类
+### 默认构造函数
+```text
+Dialog({
+    super.key,
+    this.backgroundColor,
+    this.elevation,
+    this.shadowColor,
+    this.surfaceTintColor,
+    this.insetAnimationDuration = const Duration(milliseconds: 100),
+    this.insetAnimationCurve = Curves.decelerate,
+    this.insetPadding,
+    this.clipBehavior,
+    this.shape,
+    this.alignment,
+    this.child,
+  })
+```
+
+### Dialog(...)参数解析
+| 参数名称                   | 使用类型               | 参数介绍                           |
+|------------------------|--------------------|--------------------------------|
+| key                    | Key                | 小部件的唯一标识符，可以用于查找和操作小部件         |
+| backgroundColor        | Color              | 对话框的背景颜色                       |
+| elevation              | double             | 阴影高度，控制对话框的阴影深度，给人一种悬浮的效果      |
+| shadowColor            | Color              | 阴影的颜色                          |
+| surfaceTintColor       | Color              | 表面着色颜色，用于影响对话框的背景色             |
+| insetAnimationDuration | Duration           | 插入动画的持续时间                      |
+| insetAnimationCurve    | Curve              | 插入动画的曲线，定义动画的速度变化              |
+| insetPadding           | EdgeInsets         | 控制对话框与屏幕边缘之间的内边距               |
+| clipBehavior           | Clip               | 裁剪行为，控制对话框内容超出边界时的裁剪方式。可以设置为   |         
+| shape                  | ShapeBorder        | 控制对话框的形状，通常用于设置对话框的圆角或自定义边框    |
+| alignment              | AlignmentGeometry  | 对话框在屏幕中的对齐方式，默认是居中对齐           |
+| child                  | Widget             | 对话框的子组件，即其实际内容                 |
+
+## Dialog类
+### 创建全屏对话框
+```text
+Dialog.fullscreen({
+    super.key,
+    this.backgroundColor,
+    this.insetAnimationDuration = Duration.zero,
+    this.insetAnimationCurve = Curves.decelerate,
+    this.child,
+  })
+```
+
+### Dialog(...)参数解析
+| 参数名称                   | 使用类型               | 参数介绍                           |
+|------------------------|--------------------|--------------------------------|
+| key                    | Key                | 小部件的唯一标识符，可以用于查找和操作小部件         |
+| backgroundColor        | Color              | 对话框的背景颜色                       |
+| insetAnimationDuration | Duration           | 插入动画的持续时间                      |
+| insetAnimationCurve    | Curve              | 插入动画的曲线，定义动画的速度变化              |
+| child                  | Widget             | 对话框的子组件，即其实际内容                 |

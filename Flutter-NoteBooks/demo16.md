@@ -5,6 +5,7 @@
 > * InheritedWidget：用于在组件树中向子组件提供共享数据。当数据发生变化时，依赖于这些数据的子组件会自动更新。这种机制被称为“数据的跨组件共享”，尤其适用于跨越多个组件树节点的数据传递，如主题、用户会话、配置等。
 > * InheritedProvider：用于在Flutter的widget树中共享和传递数据。它自动处理状态更新的通知和重建工作。
 > * Provider：用于实现数据的依赖注入和状态管理。它基于 InheritedWidget，并通过简化的 API 提供了在 Flutter 中共享和管理数据的方式。
+> * Listener：用于监听用户触摸、拖动和其他指针事件的组件。
 
 ## LinearProgressIndicator类
 ### 默认构造函数
@@ -236,3 +237,19 @@ Provider.value({
 | builder            | Widget Function | 回调函数，用来动态构建 widget 树                                                                                   |
 | child              | Widget          | 这是 Provider 的子 widget，通常是你应用的根 widget。child 会作为 Provider 提供的对象的消费者                                     |
 
+## Listener类
+### 默认构造函数
+```text
+Provider.value({
+  Key? key,
+  required T value,
+  UpdateShouldNotify<T>? updateShouldNotify,
+  TransitionBuilder? builder,
+  Widget? child,
+})
+
+```
+
+### Provider.value参数解析
+| 参数名称               | 使用类型            | 参数介绍                                                                                                   |
+|--------------------|-----------------|--------------------------------------------------------------------------------------------------------|

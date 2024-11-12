@@ -1,0 +1,12 @@
+key : 用于标识该对话框小部件的唯一标识符。通常用于测试或管理特定的对话框实例。
+backgroundColor : 对话框的背景颜色。默认是一个浅色背景，也可以根据需求设置其他颜色。
+elevation : 阴影高度，控制对话框的阴影深度，给人一种悬浮的效果。较高的 elevation 值会带来更浓的阴影，使对话框看起来更立体。
+shadowColor : 阴影的颜色。可以改变对话框周围阴影的颜色，使其适应不同的设计主题。默认颜色通常是黑色的半透明阴影。
+surfaceTintColor : 表面着色颜色，用于影响对话框的背景色。这在 Material Design 3 中尤为重要，因为它可以对背景色进行微调，产生视觉上的深浅变化。
+insetAnimationDuration : 插入动画的持续时间。这个动画发生在对话框显示时，控制对话框弹出动画的时间。默认值为 Duration(milliseconds: 100)，即100毫秒。
+insetAnimationCurve : 插入动画的曲线，定义动画的速度变化。默认使用 Curves.decelerate 曲线，即动画逐渐减速。可选择不同的曲线（如 Curves.easeIn、Curves.bounceIn 等）来创建不同的动画效果。
+insetPadding : 控制对话框与屏幕边缘之间的内边距。默认会给对话框四周添加一些距离，确保对话框不会贴近屏幕边缘。设置 EdgeInsets.zero 可以实现全屏对话框。
+clipBehavior : 裁剪行为，控制对话框内容超出边界时的裁剪方式。可以设置为：
+shape : 控制对话框的形状，通常用于设置对话框的圆角或自定义边框。常见设置是 RoundedRectangleBorder（圆角矩形边框）或 ContinuousRectangleBorder。例如，使用 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)) 可以创建带圆角的对话框。
+alignment : 对话框在屏幕中的对齐方式，默认是居中对齐。通过设置 Alignment.topCenter、Alignment.bottomCenter 等值，可以使对话框显示在特定位置。
+child : 对话框的子组件，即其实际内容。可以是任何 Widget，例如 Column、Container、自定义布局等。Dialog并没有强制要求使用特定的布局结构，所以可以根据需求完全自定义内容。
