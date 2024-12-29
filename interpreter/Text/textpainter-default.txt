@@ -1,0 +1,11 @@
+text ：这是要绘制的文本内容，通常是 TextSpan 类型。InlineSpan 是一个抽象类，TextSpan 是它的常见实现。你可以通过这个参数设置文本的实际内容和样式。
+textAlign ：设置文本的对齐方式。
+textDirection ：定义文本的书写方向。
+textScaleFactor ：控制文本的缩放比例。此参数已被废弃，建议使用 textScaler 来控制文本缩放。
+textScaler ：替代textScaleFactor使用的参数，用于控制文本的缩放行为。
+maxLines ：设置文本的最大行数。如果设置了该参数，文本会被截断并且不超过指定的行数。
+ellipsis ：如果文本的行数超过了 maxLines，则会在文本末尾添加此省略符号（如 "..."）。这是当文本需要截断时的显示方式。
+locale ：设置文本的区域设置，影响字体选择、排版规则等。
+strutStyle ：设置文本的 strut 样式，用于定义行间距的样式。strut 用于在排版时调整文本的行高和基线对齐。常见的应用场景是控制文本的行间距。
+textWidthBasis ：设置文本布局时如何计算宽度。
+textHeightBehavior ：控制文本的高度行为。通常与 textHeightBehavior 配合使用可以调整文本的垂直对齐方式。具体的行为可以控制字符行之间的垂直间距，例如影响基线对齐

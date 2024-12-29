@@ -1,0 +1,8 @@
+key ：以便 Flutter 跟踪和管理它们。当 child 改变时，key 是触发动画的关键标志。
+child ：这是 AnimatedSwitcher 的子元素。
+duration ：控制过渡动画的时长，即从一个子元素切换到另一个子元素所需的时间。此参数是必填项，决定了动画的速度。
+reverseDuration ：可选的反向动画时长。当切换从目标状态返回到源状态时，使用这个时长。如果没有指定，reverseDuration 将默认为 duration。
+switchInCurve ：控制新的子元素进入时的动画曲线。Curve 用于定义动画的变化方式，Curves.linear 表示匀速动画，其他常见的曲线有：
+switchOutCurve ：控制旧的子元素退出时的动画曲线。和 switchInCurve 类似，这个曲线控制旧元素的退出动画。
+transitionBuilder ：一个回调函数，接受当前的动画值和新的子元素，返回一个包含动画过渡效果的小部件。你可以使用这个参数来自定义动画效果。默认情况下，AnimatedSwitcher 使用 defaultTransitionBuilder，你可以定义如 FadeTransition、ScaleTransition、SlideTransition 等效果。
+layoutBuilder ：这是一个回调函数，允许你自定义 child 的布局行为。LayoutBuilder 提供了当前小部件的约束和子元素的布局。你可以使用它来控制 child 的布局或设置自定义的布局。

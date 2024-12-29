@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d59195-1deb-4896-bd9c-ef25f8db0aff" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/interpreter/Dialog/dialog-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Animation/animationswitcher-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Text/textpainter-default.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpreter/Tools/listener-default.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo12.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo12.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo8.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo8.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo2.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +43,8 @@
     &quot;Python.markdown表格解析器.executor&quot;: &quot;Run&quot;,
     &quot;Python.不带类型的markdown表格解析器.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -211,6 +216,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="不带类型的markdown表格解析器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FlutterDoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interpreter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="不带类型的markdown表格解析器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FlutterDoc" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interpreter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.不带类型的markdown表格解析器" />
@@ -222,8 +273,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
-        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
@@ -242,6 +293,8 @@
       <workItem from="1731219308908" duration="1656000" />
       <workItem from="1731225347092" duration="9744000" />
       <workItem from="1731400070430" duration="3186000" />
+      <workItem from="1735042130461" duration="2634000" />
+      <workItem from="1735360811341" duration="6039000" />
     </task>
     <servers />
   </component>
@@ -249,7 +302,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FlutterDoc$markdown.coverage" NAME="不带类型的markdown表格解析器 覆盖结果" MODIFIED="1731401881969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interpreter" />
+    <SUITE FILE_PATH="coverage/FlutterDoc$markdown.coverage" NAME="不带类型的markdown表格解析器 覆盖结果" MODIFIED="1735365074095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interpreter" />
     <SUITE FILE_PATH="coverage/FlutterDoc$demo.coverage" NAME="demo 覆盖结果" MODIFIED="1731229606038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

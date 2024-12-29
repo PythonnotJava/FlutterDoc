@@ -3,6 +3,8 @@
 > * Text：用于显示文本的基本组件之一，它用于在应用程序中呈现静态文本内容。
 > * TextStyle：用于定义文本样式的类。它可以用于定制文本的字体、大小、颜色、加粗、斜体、下划线等属性。
 > * TextSpan：用于构建富文本（Rich Text）的类。它允许你在一个文本中应用不同的样式、添加链接、插入小部件等。
+> * TextPainter：用于在画布上绘制文本的工具类。它提供了高度灵活的文本布局和绘制功能，特别适合需要精细控制文本布局或在自定义绘制组件中使用的场景。
+
 ## Text类
 ### 默认构造函数
 ```text
@@ -182,3 +184,43 @@ TextSpan({
 > * GestureRecognizer是一个抽象类，用于手势识别交互
 > * MouseCursor是一个抽象类，表示鼠标指针样式
 > * 这里的Function类实质指的是PointerEnterEventListener，这实际上是一个返回空值的匿名函数，在Flutter的很多控件中，都有这样的链接函数的功能的参数，它们大多都是返回空值的匿名函数，没有特别强调，我都会把它们统一声明为Function类
+
+## TextPainter类
+### 默认构造函数
+```text
+TextPainter({
+    InlineSpan? text,
+    TextAlign textAlign = TextAlign.start,
+    TextDirection? textDirection,
+    @Deprecated(
+      'Use textScaler instead. '
+      'Use of textScaleFactor was deprecated in preparation for the upcoming nonlinear text scaling support. '
+      'This feature was deprecated after v3.12.0-2.0.pre.',
+    )
+    double textScaleFactor = 1.0,
+    TextScaler textScaler = TextScaler.noScaling,
+    int? maxLines,
+    String? ellipsis,
+    Locale? locale,
+    StrutStyle? strutStyle,
+    TextWidthBasis textWidthBasis = TextWidthBasis.parent,
+    TextHeightBehavior? textHeightBehavior,
+  })
+```
+
+### TextPainter(...)参数解析
+| 参数名称                  | 使用类型                | 参数介绍                                        |
+|-----------------------|---------------------|---------------------------------------------|
+| text                  | InlineSpan          | 这是要绘制的文本内容                                  |
+| textAlign             | TextAlign           | 设置文本的对齐方式                                   |
+| textDirection         | TextDirection       | 定义文本的书写方向                                   |
+| textScaleFactor       | TextScaler          | 控制文本的缩放比例                                   |
+| textScaler            | double              | 替代textScaleFactor使用的参数，用于控制文本的缩放行为          |
+| maxLines              | int                 | 设置文本的最大行数                                   |
+| ellipsis              | String              | 如果文本的行数超过了 maxLines，则会在文本末尾添加此省略符号（如 "..."） |
+| locale                | Locale              | 设置文本的区域设置，影响字体选择、排版规则等                      |
+| strutStyle            | StrutStyle          | 设置文本的 strut 样式，用于定义行间距的样式                   |
+| textWidthBasis        | TextWidthBasis      | 设置文本布局时如何计算宽度                               |
+| textHeightBehavior    | TextHeightBehavior  | 控制文本的高度行为                                   |
+
+

@@ -240,16 +240,34 @@ Provider.value({
 ## Listener类
 ### 默认构造函数
 ```text
-Provider.value({
-  Key? key,
-  required T value,
-  UpdateShouldNotify<T>? updateShouldNotify,
-  TransitionBuilder? builder,
-  Widget? child,
-})
-
+Listener({
+    super.key,
+    this.onPointerDown,
+    this.onPointerMove,
+    this.onPointerUp,
+    this.onPointerHover,
+    this.onPointerCancel,
+    this.onPointerPanZoomStart,
+    this.onPointerPanZoomUpdate,
+    this.onPointerPanZoomEnd,
+    this.onPointerSignal,
+    this.behavior = HitTestBehavior.deferToChild,
+    super.child,
+  })
 ```
 
-### Provider.value参数解析
-| 参数名称               | 使用类型            | 参数介绍                                                                                                   |
-|--------------------|-----------------|--------------------------------------------------------------------------------------------------------|
+### Listener(...)参数解析
+| 参数名称                   | 使用类型            | 参数介绍                               |
+|------------------------|-----------------|------------------------------------|
+| key                    | Key             | 标识该小部件的唯一性，用于在树中区分不同的 Listener 小部件 |
+| onPointerDown          | void Function   | 当指针按下时触发，比如用户用手指或鼠标按下时会调用此回调       |
+| onPointerMove          | void Function   | 当指针在屏幕上移动时触发，常用于拖动或滑动的场景           |
+| onPointerUp            | void Function   | 当指针抬起时触发，比如用户手指从屏幕上移开              |
+| onPointerHover         | void Function   | 当指针悬停在组件上时触发，通常用于鼠标悬停事件（不适用于触摸设备）  |
+| onPointerCancel        | void Function   | 当指针事件被系统取消时触发，比如触摸手势被中断或设备发生其他干扰   |
+| onPointerPanZoomStart  | void Function   | 当触控手势开始放大、缩小或平移时触发                 |
+| onPointerPanZoomUpdate | void Function   | 当触控手势正在更新（如缩放或平移的值发生变化）时触发         |
+| onPointerPanZoomEnd    | void Function   | 当触控手势结束（例如用户停止缩放或平移）时触发            |
+| onPointerSignal        | void Function   | 当指针信号事件触发时调用                       |
+| behavior               | HitTestBehavior | 控制该组件如何响应命中测试                      |
+| child                  | Widget          | 嵌套在 Listener 内的子组件                 |

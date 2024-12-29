@@ -1,0 +1,12 @@
+key: 标识该小部件的唯一性，用于在树中区分不同的 Listener 小部件。
+onPointerDown: 当指针按下时触发，比如用户用手指或鼠标按下时会调用此回调。
+onPointerMove: 当指针在屏幕上移动时触发，常用于拖动或滑动的场景。
+onPointerUp: 当指针抬起时触发，比如用户手指从屏幕上移开。
+onPointerHover: 当指针悬停在组件上时触发，通常用于鼠标悬停事件（不适用于触摸设备）。
+onPointerCancel: 当指针事件被系统取消时触发，比如触摸手势被中断或设备发生其他干扰。
+onPointerPanZoomStart: 当触控手势开始放大、缩小或平移时触发。适用于多指操作（如缩放手势）。
+onPointerPanZoomUpdate: 当触控手势正在更新（如缩放或平移的值发生变化）时触发。
+onPointerPanZoomEnd: 当触控手势结束（例如用户停止缩放或平移）时触发。
+onPointerSignal: 当指针信号事件触发时调用。常见的信号事件包括鼠标滚轮滚动。
+behavior: 控制该组件如何响应命中测试。
+child: 嵌套在 Listener 内的子组件。Listener 将监听与其子组件相关的事件。

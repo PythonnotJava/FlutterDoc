@@ -4,6 +4,7 @@
 > * Tween：用于在动画的起始值和结束值之间插值。它通常与 AnimationController 和 CurvedAnimation 一起使用，帮助你在动画的生命周期内生成一个值的范围。
 > * AnimatedBuilder：用于在动画执行期间重建部件树。通常，它用于包裹需要根据动画值进行重建的小部件树，以避免重新构建整个页面，提高性能。
 > * Hero：Hero动画是一种通过在页面之间共享共同的Widget，实现平滑过渡的动画效果。这种动画通常用于在两个页面之间传递共享的UI元素，比如在列表页面和详情页面之间切换时，可以使用Hero动画来产生更流畅的过渡效果。
+> * AnimatedSwitcher：用于在其子元素发生变化时提供平滑的过渡动画。它允许你在两个不同的子元素之间切换时，自动插入一个动画效果，使界面看起来更加流畅和动态。
 
 ## AnimationController类
 ```text
@@ -127,6 +128,31 @@ Hero({
 
 
 
+## AnimatedSwitcher类
+```text
+AnimatedSwitcher({
+    super.key,
+    this.child,
+    required this.duration,
+    this.reverseDuration,
+    this.switchInCurve = Curves.linear,
+    this.switchOutCurve = Curves.linear,
+    this.transitionBuilder = AnimatedSwitcher.defaultTransitionBuilder,
+    this.layoutBuilder = AnimatedSwitcher.defaultLayoutBuilder,
+  })
+```
+
+### AnimatedSwitcher(...)参数解析
+| 参数名称              | 使用类型                              | 参数介绍                                   |
+|-------------------|-----------------------------------|----------------------------------------|
+| key               | Key                               | 用于传递给Widget类的key参数                     |
+| child             | Widget                            | 这是 AnimatedSwitcher 的子元素               |
+| duration          | Duration                          | 控制过渡动画的时长，即从一个子元素切换到另一个子元素所需的时间        |
+| reverseDuration   | Duration                          | 可选的反向动画时长                              |
+| switchInCurve     | Curve                             | 控制新的子元素进入时的动画曲线                        |
+| switchOutCurve    | Curve                             | 控制旧的子元素退出时的动画曲线                        |
+| transitionBuilder | AnimatedSwitcherTransitionBuilder | 一个回调函数，接受当前的动画值和新的子元素，返回一个包含动画过渡效果的小部件 |
+| layoutBuilder     | AnimatedSwitcherLayoutBuilder     | 一个回调函数，允许你自定义 child 的布局行为              |
 
 
 
