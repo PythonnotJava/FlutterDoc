@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d59195-1deb-4896-bd9c-ef25f8db0aff" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/interpreter/Animation/animationswitcher-default.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Text/textpainter-default.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interpreter/Tools/listener-default.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo12.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo12.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo16.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter-NoteBooks/demo2.md" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter-NoteBooks/demo2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpreter/不带类型的markdown表格解析器.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.不带类型的markdown表格解析器">
+  <component name="RunManager" selected="Python.demo">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FlutterDoc" />
       <option name="ENV_FILES" value="" />
@@ -264,7 +257,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.不带类型的markdown表格解析器" />
         <item itemvalue="Python.markdown表格解析器" />
         <item itemvalue="Python.demo" />
       </list>
@@ -273,8 +265,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
-        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
@@ -295,6 +287,8 @@
       <workItem from="1731400070430" duration="3186000" />
       <workItem from="1735042130461" duration="2634000" />
       <workItem from="1735360811341" duration="6039000" />
+      <workItem from="1747568215786" duration="1960000" />
+      <workItem from="1747574164784" duration="49000" />
     </task>
     <servers />
   </component>
